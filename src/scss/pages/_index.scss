@@ -1,0 +1,8 @@
+.wrapper {
+  max-width: 688px;
+  margin: auto;
+
+  @include desktop {
+    max-width: 944px;
+  }
+}
