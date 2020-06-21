@@ -1,0 +1,109 @@
+.wrapper-custom{
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  //COMUN
+  .custom{
+    font-family: $font-primary;
+    font-weight: $font-weight-semibold;
+  }
+  //ARTICLE DESIGN
+  .design{
+    color: $color-text;
+    border-bottom: 1px solid $color-border-bottom;
+    .title-article{
+      padding-top: 27px;
+      padding-bottom: 22px;
+      font-size: 18px;
+      margin: 0;
+      .fa-object-ungroup{
+        color: $color-secondary-dark;
+        font-size: 18px;
+        margin-right: 10px;;
+      }
+    }
+    .choose-color{
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: 1fr;
+      .subtitle-article{
+        font-weight: 400;
+        grid-column: 1 / 2;
+        margin: 0;
+        font-size: 14px;
+        padding-left: 19px;
+      }
+      .form-colors{
+        grid-column: 2 / 3;
+        display: flex;
+        flex-direction: column;
+        .color-red{
+          margin-bottom: 28px;
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+          .color1{
+            width: 30px;
+            height: 25px;
+            margin-left: 10px;
+            background-color: $color-primary-dark;
+          }
+          .color2{
+            width: 30px;
+            height: 25px;
+            background-color: $color-primary-medium;
+          }
+          .color3{
+            width: 30px;
+            height: 25px;
+            background-color: $color-primary-light;
+          }
+        }
+        .color-green{
+          margin-bottom: 28px;
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+          .color4{
+            width: 30px;
+            height: 25px;
+            margin-left: 10px;
+            background-color: #420101;
+          }
+          .color5{
+            width: 30px;
+            height: 25px;
+            background-color: #bd1010;
+          }
+          .color6{
+            width: 30px;
+            height: 25px;
+            background-color: #e95626;
+          }
+        }
+        .color-mix{
+          margin-bottom: 28px;
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+          .color7{
+            width: 30px;
+            height: 25px;
+            margin-left: 10px;
+            background-color: #3e5b65;
+          }
+          .color8{
+            width: 30px;
+            height: 25px;
+            background-color: #eab052;
+          }
+          .color9{
+            width: 30px;
+            height: 25px;
+            background-color: #a0c0cf;
+          }
+        }
+      }
+    }
+  }
+  
