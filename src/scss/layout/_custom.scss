@@ -1,20 +1,20 @@
-.wrapper-custom{
+//COMUN
+.wrapper__custom{
     padding-left: 20px;
     padding-right: 20px;
   }
-.border-none{
+.article__form__noborder{
   border: none;
 }
-//COMUN
-.custom{
+.section__custom{
   font-family: $font-primary;
   font-weight: $font-weight-semibold;
 }
 //ARTICLE DESIGN
-.design{
+.article__custom__artdesign{
   color: $color-dark-medium;
   border-bottom: 1px solid $color-medium-extralight;
-  .title-article{
+  .article__custom__titledesign{
     padding-top: 27px;
     padding-bottom: 22px;
     font-size: 18px;
@@ -25,82 +25,82 @@
       margin-right: 10px;
     }
   }
-  .choose-color{
+  .article__custom__ccolor{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: 1fr;
-    .subtitle-article{
+    .article__custom__subtitdesign{
       font-weight: 400;
       grid-column: 1 / 2;
       margin: 0;
       font-size: 14px;
       padding-left: 19px;
     }
-    .form-colors{
+    .article__custom__colors{
       grid-column: 2 / 3;
       display: flex;
       flex-direction: column;
-      .color-green{
+      .article__custom__cgreen{
         margin-bottom: 28px;
         display: flex;
         flex-direction: row;
         align-items: center;
-        .color1{
+        .article__custom__cgreen1{
           width: 30px;
           height: 25px;
           margin-left: 10px;
           background-color: $color-primary-dark;
         }
-        .color2{
+        .article__custom__cgreen2{
           width: 30px;
           height: 25px;
           background-color: $color-primary-medium;
         }
-        .color3{
+        .article__custom__cgreen3{
           width: 30px;
           height: 25px;
           background-color: $color-primary-light;
         }
       }
-      .color-red{
+      .article__custom__cred{
         margin-bottom: 28px;
         display: flex;
         flex-direction: row;
         align-items: center;
-        .color4{
+        .article__custom__cred4{
           width: 30px;
           height: 25px;
           margin-left: 10px;
           background-color: #420101;
         }
-        .color5{
+        .article__custom__cred5{
           width: 30px;
           height: 25px;
           background-color: #bd1010;
         }
-        .color6{
+        .article__custom__cred6{
           width: 30px;
           height: 25px;
           background-color: #e95626;
         }
       }
-      .color-mix{
+      .article__custom__cmix{
         margin-bottom: 28px;
         display: flex;
         flex-direction: row;
         align-items: center;
-        .color7{
+        .article__custom__cmix7{
           width: 30px;
           height: 25px;
           margin-left: 10px;
           background-color: #3e5b65;
         }
-        .color8{
+        .article__custom__cmix8{
           width: 30px;
           height: 25px;
           background-color: #eab052;
         }
-        .color9{
+        .article__custom__cmix9{
           width: 30px;
           height: 25px;
           background-color: #a0c0cf;
@@ -109,11 +109,11 @@
     }
   }
 }
-//ARTICLE RELLENA
-.fill{
+//ARTICLE FILL
+.article__fill{
   color: $color-dark-medium;
   border-bottom: 1px solid $color-medium-extralight;
-  .title-article{
+  .article__fill__title{
     padding-top: 27px;
     padding-bottom: 22px;
     font-size: 18px;
@@ -124,7 +124,7 @@
       margin-right: 10px;
     }
   }
-  .form{
+  .article__fill__form{
     padding: 0px;
     label{
       display: block;
@@ -140,17 +140,17 @@
       margin-bottom: 20px;
       width: 100%;
     }
-    .add-image{
-      .title-image{
+    .article__fill__addimg{
+      .article__fill__titimg{
         font-size: 14px;
         line-height: 20px;
         color: $color-primary-dark;
         font-weight: 400;
         padding-bottom: 7px;
       }
-      .miniature-img{
+      .article__fill__minimg{
         display: flex;
-        .button-add{
+        .article__fill__button{
           background-color: $color-secondary-dark;
           color: white;
           font-size: 14px;
@@ -160,7 +160,7 @@
           height: 30px;
           border-radius: 5px;
         }
-        .rectangle{
+        .article__fill__rectangle{
           border: 1px solid $color-primary-light;
           width: 30px;
           height: 30px;
@@ -171,10 +171,10 @@
   }
 }
 //ARTICLE SHARE
-.share{
+.article__share{
   color: $color-dark-medium;
   border-bottom: 1px solid $color-medium-extralight;
-  .title-article{
+  .article__share__title{
     padding-top: 27px;
     padding-bottom: 22px;
     font-size: 18px;
