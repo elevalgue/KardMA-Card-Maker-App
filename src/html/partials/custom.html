@@ -1,62 +1,64 @@
 <section class="custom wrapper-custom">
-  <article class="design">
-    <h2 class="title-article"><i class="far fa-object-ungroup"></i>DISEÑA</h2>
-    <div class="choose-color">
-      <h3 class="subtitle-article">COLORES</h3>
-      <form class="form-colors">
-        <div class="color-red">
-          <input type="radio" value="colors-red" name="select-color" checked/>
-          <div class="color1"></div>
-          <div class="color2"></div>
-          <div class="color3"></div>
-        </div>
-        <div class="color-green">
-          <input type="radio" value="colors-green" name="select-color"/>
-          <div class="color4"></div>
-          <div class="color5"></div>
-          <div class="color6"></div>
-        </div>
-        <div class="color-mix">
-          <input  type="radio" value="colors-mix" name="select-color"/>
-          <div class="color7"></div>
-          <div class="color8"></div>
-          <div class="color9"></div>
-        </div>
-      </form>
-    </div>
-  </article>
-  <article>
-    <h2><i class="far fa-keyboard"></i> RELLENA</h2>
-    <form>
-      <label for="fullName">Nombre completo</label>
-      <input id="fullName" type="text" />
-      <label for="position">Puesto</label>
-      <input id="position" type="text" />
-      <div>
-        <input type="button" value="Añadir imagen">
-        <div class="miniature-img">
-          <img src="" alt="">
-        </div>
+  <form action="">
+    <article class="design">
+      <h2 class="title-article"><i class="far fa-object-ungroup"></i>DISEÑA</h2>
+      <div class="choose-color">
+        <h3 class="subtitle-article">COLORES</h3>
+        <fieldset class="form-colors border-none">
+          <div class="color-green">
+            <input type="radio" value="colors-red" name="select-color" checked/>
+            <div class="color1"></div>
+            <div class="color2"></div>
+            <div class="color3"></div>
+          </div>
+          <div class="color-red">
+            <input type="radio" value="colors-green" name="select-color"/>
+            <div class="color4"></div>
+            <div class="color5"></div>
+            <div class="color6"></div>
+          </div>
+          <div class="color-mix">
+            <input  type="radio" value="colors-mix" name="select-color"/>
+            <div class="color7"></div>
+            <div class="color8"></div>
+            <div class="color9"></div>
+          </div>
+        </fieldset>
       </div>
-      <label for="email">Email</label>
-      <input id="email" type="text" />
-      <label for="phone">Teléfono</label>
-      <input id="phone" type="text" />
-      <label for="linkedin">Linkedin</label>
-      <input id="linkedin" type="text" />
-      <label for="github">Github</label>
-      <input id="github" type="text" />
-    </form>
-  </article>
-  <article>
-    <h2><i class="fas fa-share-alt"></i> COMPARTE</h2>
-    <div>
-      <button><i class="far fa-address-card"></i>CREAR TARJETA</button>
-    </div>
-    <div>
-      <h3>La tarjeta ha sido creada:</h3>
-      <a href=""></a>
-      <button><i class="fab fa-twitter"></i> Compartir en Twitter</button>
-    </div>
-  </article>
+    </article>
+    <article class="fill">
+      <h2 class="title-article"><i class="far fa-keyboard"></i> RELLENA</h2>
+      <fieldset class="form border-none">
+        <label for="fullName">Nombre completo</label>
+        <input id="fullName" type="text" />
+        <label for="position">Puesto</label>
+        <input id="position" type="text" />
+        <div>
+          <input type="button" value="Añadir imagen">
+          <div class="miniature-img">
+            <img src="" alt="">
+          </div>
+        </div>
+        <label for="email">Email</label>
+        <input id="email" type="text" />
+        <label for="phone">Teléfono</label>
+        <input id="phone" type="text" />
+        <label for="linkedin">Linkedin</label>
+        <input id="linkedin" type="text" />
+        <label for="github">Github</label>
+        <input id="github" type="text" />
+      </fieldset>
+    </article>
+    <article>
+      <h2><i class="fas fa-share-alt"></i> COMPARTE</h2>
+      <div>
+        <button><i class="far fa-address-card"></i>CREAR TARJETA</button>
+      </div>
+      <div>
+        <h3>La tarjeta ha sido creada:</h3>
+        <a href=""></a>
+        <button><i class="fab fa-twitter"></i> Compartir en Twitter</button>
+      </div>
+    </article>
+  </form>
 </section>

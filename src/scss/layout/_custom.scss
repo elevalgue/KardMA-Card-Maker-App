@@ -2,6 +2,9 @@
     padding-left: 20px;
     padding-right: 20px;
   }
+.border-none{
+  border: none;
+}
   //COMUN
   .custom{
     font-family: $font-primary;
@@ -19,7 +22,7 @@
       .fa-object-ungroup{
         color: $color-secondary-dark;
         font-size: 18px;
-        margin-right: 10px;;
+        margin-right: 10px;
       }
     }
     .choose-color{
@@ -37,7 +40,7 @@
         grid-column: 2 / 3;
         display: flex;
         flex-direction: column;
-        .color-red{
+        .color-green{
           margin-bottom: 28px;
           display: flex;
           flex-direction: row;
@@ -59,7 +62,7 @@
             background-color: $color-primary-light;
           }
         }
-        .color-green{
+        .color-red{
           margin-bottom: 28px;
           display: flex;
           flex-direction: row;
@@ -106,4 +109,27 @@
       }
     }
   }
-  
+//ARTICLE RELLENA
+.fill{
+  color: $color-dark-medium;
+  border-bottom: 1px solid $color-medium-extralight;
+  .title-article{
+    padding-top: 27px;
+    padding-bottom: 22px;
+    font-size: 18px;
+    margin: 0;
+    .fa-keyboard{
+      color: $color-secondary-dark;
+      font-size: 18px;
+      margin-right: 10px;
+    }
+  }
+  .form{
+    label{
+      display: block;
+    }
+    input{
+      display: block;
+    }
+  }
+}
