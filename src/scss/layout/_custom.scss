@@ -5,110 +5,110 @@
 .border-none{
   border: none;
 }
-  //COMUN
-  .custom{
-    font-family: $font-primary;
-    font-weight: $font-weight-semibold;
-  }
-  //ARTICLE DESIGN
-  .design{
-    color: $color-dark-medium;
-    border-bottom: 1px solid $color-medium-extralight;
-    .title-article{
-      padding-top: 27px;
-      padding-bottom: 22px;
+//COMUN
+.custom{
+  font-family: $font-primary;
+  font-weight: $font-weight-semibold;
+}
+//ARTICLE DESIGN
+.design{
+  color: $color-dark-medium;
+  border-bottom: 1px solid $color-medium-extralight;
+  .title-article{
+    padding-top: 27px;
+    padding-bottom: 22px;
+    font-size: 18px;
+    margin: 0;
+    .fa-object-ungroup{
+      color: $color-secondary-dark;
       font-size: 18px;
-      margin: 0;
-      .fa-object-ungroup{
-        color: $color-secondary-dark;
-        font-size: 18px;
-        margin-right: 10px;
-      }
+      margin-right: 10px;
     }
-    .choose-color{
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-      grid-template-rows: 1fr;
-      .subtitle-article{
-        font-weight: 400;
-        grid-column: 1 / 2;
-        margin: 0;
-        font-size: 14px;
-        padding-left: 19px;
-      }
-      .form-colors{
-        grid-column: 2 / 3;
+  }
+  .choose-color{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr;
+    .subtitle-article{
+      font-weight: 400;
+      grid-column: 1 / 2;
+      margin: 0;
+      font-size: 14px;
+      padding-left: 19px;
+    }
+    .form-colors{
+      grid-column: 2 / 3;
+      display: flex;
+      flex-direction: column;
+      .color-green{
+        margin-bottom: 28px;
         display: flex;
-        flex-direction: column;
-        .color-green{
-          margin-bottom: 28px;
-          display: flex;
-          flex-direction: row;
-          align-items: center;
-          .color1{
-            width: 30px;
-            height: 25px;
-            margin-left: 10px;
-            background-color: $color-primary-dark;
-          }
-          .color2{
-            width: 30px;
-            height: 25px;
-            background-color: $color-primary-medium;
-          }
-          .color3{
-            width: 30px;
-            height: 25px;
-            background-color: $color-primary-light;
-          }
+        flex-direction: row;
+        align-items: center;
+        .color1{
+          width: 30px;
+          height: 25px;
+          margin-left: 10px;
+          background-color: $color-primary-dark;
         }
-        .color-red{
-          margin-bottom: 28px;
-          display: flex;
-          flex-direction: row;
-          align-items: center;
-          .color4{
-            width: 30px;
-            height: 25px;
-            margin-left: 10px;
-            background-color: #420101;
-          }
-          .color5{
-            width: 30px;
-            height: 25px;
-            background-color: #bd1010;
-          }
-          .color6{
-            width: 30px;
-            height: 25px;
-            background-color: #e95626;
-          }
+        .color2{
+          width: 30px;
+          height: 25px;
+          background-color: $color-primary-medium;
         }
-        .color-mix{
-          margin-bottom: 28px;
-          display: flex;
-          flex-direction: row;
-          align-items: center;
-          .color7{
-            width: 30px;
-            height: 25px;
-            margin-left: 10px;
-            background-color: #3e5b65;
-          }
-          .color8{
-            width: 30px;
-            height: 25px;
-            background-color: #eab052;
-          }
-          .color9{
-            width: 30px;
-            height: 25px;
-            background-color: #a0c0cf;
-          }
+        .color3{
+          width: 30px;
+          height: 25px;
+          background-color: $color-primary-light;
+        }
+      }
+      .color-red{
+        margin-bottom: 28px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        .color4{
+          width: 30px;
+          height: 25px;
+          margin-left: 10px;
+          background-color: #420101;
+        }
+        .color5{
+          width: 30px;
+          height: 25px;
+          background-color: #bd1010;
+        }
+        .color6{
+          width: 30px;
+          height: 25px;
+          background-color: #e95626;
+        }
+      }
+      .color-mix{
+        margin-bottom: 28px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        .color7{
+          width: 30px;
+          height: 25px;
+          margin-left: 10px;
+          background-color: #3e5b65;
+        }
+        .color8{
+          width: 30px;
+          height: 25px;
+          background-color: #eab052;
+        }
+        .color9{
+          width: 30px;
+          height: 25px;
+          background-color: #a0c0cf;
         }
       }
     }
   }
+}
 //ARTICLE RELLENA
 .fill{
   color: $color-dark-medium;
@@ -125,11 +125,64 @@
     }
   }
   .form{
+    padding: 0px;
     label{
       display: block;
+      font-size: 14px;
+      line-height: 20px;
+      color: $color-primary-dark;
+      font-weight: 400;
+      padding-bottom: 7px;
     }
     input{
       display: block;
+      border: 1px solid $color-primary-light;
+      margin-bottom: 20px;
+      width: 100%;
+    }
+    .add-image{
+      .title-image{
+        font-size: 14px;
+        line-height: 20px;
+        color: $color-primary-dark;
+        font-weight: 400;
+        padding-bottom: 7px;
+      }
+      .miniature-img{
+        display: flex;
+        .button-add{
+          background-color: $color-secondary-dark;
+          color: white;
+          font-size: 14px;
+          line-height: 20px;
+          padding: 0 22px 0 22px;
+          width: 140px;
+          height: 30px;
+          border-radius: 5px;
+        }
+        .rectangle{
+          border: 1px solid $color-primary-light;
+          width: 30px;
+          height: 30px;
+          margin-left: 20px;
+        }
+      }
+    }
+  }
+}
+//ARTICLE SHARE
+.share{
+  color: $color-dark-medium;
+  border-bottom: 1px solid $color-medium-extralight;
+  .title-article{
+    padding-top: 27px;
+    padding-bottom: 22px;
+    font-size: 18px;
+    margin: 0;
+    .fa-share-alt{
+      color: $color-secondary-dark;
+      font-size: 18px;
+      margin-right: 10px;
     }
   }
 }
