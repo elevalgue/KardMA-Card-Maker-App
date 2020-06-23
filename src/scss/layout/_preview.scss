@@ -1,7 +1,7 @@
 .preview {
   height: 457px;
   background-image: linear-gradient(to bottom, #bfcdd0, #dde9ed);
-  padding: 38px 35px 40px 45px;
+  padding: 38px 40px;
 
   &__button {
     height: 30px;
@@ -17,14 +17,40 @@
     background-color: $color-light;
     box-shadow: 0 1px 10px 0 $color-dark;
     height: 329px;
+    border-radius: 2px;
+    width: 240px;
+    margin: auto;
 
     &__name {
-      background-color: pink;
+      font-family: $font-secondary;
+      line-height: 20px;
+      padding: 21px 0 10px;
+
+      &__title {
+        font-weight: $font-weight-bold;
+        font-size: 18px;
+        color: $color-primary-dark;
+        border-left: 5px solid $color-primary-medium;
+        padding-left: 15px;
+      }
+      &__subtitle {
+        font-weight: $font-weight-regular;
+        font-size: 16px;
+        color: $color-dark-medium;
+        border-left: 5px solid $color-primary-medium;
+        padding-left: 15px;
+        padding-top: 4px;
+      }
+    }
+    &__photo {
+      height: 200px;
     }
 
     &__icons {
       display: flex;
       justify-content: flex-start;
+      padding: 10px 0 12px 20px;
+
       &__item {
         border: 2px solid $color-primary-light;
         border-radius: 16px;
