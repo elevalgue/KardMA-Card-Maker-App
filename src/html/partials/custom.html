@@ -1,62 +1,84 @@
-<section class="custom wrapper-custom">
-  <article class="design">
-    <h2 class="title-article"><i class="far fa-object-ungroup"></i>DISEÑA</h2>
-    <div class="choose-color">
-      <h3 class="subtitle-article">COLORES</h3>
-      <form class="form-colors">
-        <div class="color-red">
-          <input type="radio" value="colors-red" name="select-color" checked/>
-          <div class="color1"></div>
-          <div class="color2"></div>
-          <div class="color3"></div>
-        </div>
-        <div class="color-green">
-          <input type="radio" value="colors-green" name="select-color"/>
-          <div class="color4"></div>
-          <div class="color5"></div>
-          <div class="color6"></div>
-        </div>
-        <div class="color-mix">
-          <input  type="radio" value="colors-mix" name="select-color"/>
-          <div class="color7"></div>
-          <div class="color8"></div>
-          <div class="color9"></div>
-        </div>
-      </form>
-    </div>
-  </article>
-  <article>
-    <h2><i class="far fa-keyboard"></i> RELLENA</h2>
-    <form>
-      <label for="fullName">Nombre completo</label>
-      <input id="fullName" type="text" />
-      <label for="position">Puesto</label>
-      <input id="position" type="text" />
-      <div>
-        <input type="button" value="Añadir imagen">
-        <div class="miniature-img">
-          <img src="" alt="">
-        </div>
+<section class="section__custom wrapper__custom">
+  <form action="">
+    <article class="article__custom__artdesign">
+      <h2 class="article__custom__titledesign">
+        <i class="far fa-object-ungroup"></i>DISEÑA
+      </h2>
+      <div class="article__custom__ccolor">
+        <h3 class="article__custom__subtitdesign">COLORES</h3>
+        <fieldset class="article__custom__colors article__form__noborder">
+          <div class="article__custom__cgreen">
+            <input
+              type="radio"
+              value="colors-red"
+              name="select-color"
+              checked
+            />
+            <div class="article__custom__cgreen1"></div>
+            <div class="article__custom__cgreen2"></div>
+            <div class="article__custom__cgreen3"></div>
+          </div>
+          <div class="article__custom__cred">
+            <input type="radio" value="colors-green" name="select-color" />
+            <div class="article__custom__cred4"></div>
+            <div class="article__custom__cred5"></div>
+            <div class="article__custom__cred6"></div>
+          </div>
+          <div class="article__custom__cmix">
+            <input type="radio" value="colors-mix" name="select-color" />
+            <div class="article__custom__cmix7"></div>
+            <div class="article__custom__cmix8"></div>
+            <div class="article__custom__cmix9"></div>
+          </div>
+        </fieldset>
       </div>
-      <label for="email">Email</label>
-      <input id="email" type="text" />
-      <label for="phone">Teléfono</label>
-      <input id="phone" type="text" />
-      <label for="linkedin">Linkedin</label>
-      <input id="linkedin" type="text" />
-      <label for="github">Github</label>
-      <input id="github" type="text" />
-    </form>
-  </article>
-  <article>
-    <h2><i class="fas fa-share-alt"></i> COMPARTE</h2>
-    <div>
-      <button><i class="far fa-address-card"></i>CREAR TARJETA</button>
-    </div>
-    <div>
-      <h3>La tarjeta ha sido creada:</h3>
-      <a href=""></a>
-      <button><i class="fab fa-twitter"></i> Compartir en Twitter</button>
-    </div>
-  </article>
+    </article>
+    <article class="article__fill">
+      <h2 class="article__fill__title">
+        <i class="far fa-keyboard"></i> RELLENA
+      </h2>
+      <fieldset class="article__fill__form article__form__noborder">
+        <label for="fullName">Nombre completo</label>
+        <input id="fullName" type="text" />
+        <label for="position">Puesto</label>
+        <input id="position" type="text" />
+        <div class="article__fill__addimg">
+          <h3 class="article__fill__titimg">Imagen de perfil</h3>
+          <div class="article__fill__minimg">
+            <input
+              class="article__fill__button"
+              type="button"
+              value="Añadir imagen"
+            />
+            <div class="article__fill__rectangle"></div>
+          </div>
+        </div>
+        <label for="email">Email</label>
+        <input id="email" type="text" />
+        <label for="phone">Teléfono</label>
+        <input id="phone" type="text" />
+        <label for="linkedin">Linkedin</label>
+        <input id="linkedin" type="text" />
+        <label for="github">Github</label>
+        <input id="github" type="text" />
+      </fieldset>
+    </article>
+    <article class="article__share">
+      <h2 class="article__share__title">
+        <i class="fas fa-share-alt"></i> COMPARTE
+      </h2>
+      <div class="article__share__container">
+        <button class="article__share__button">
+          <i class="far fa-address-card"></i>CREAR TARJETA
+        </button>
+      </div>
+      <div class="article__share__create">
+        <h3 class="article__share_copy">La tarjeta ha sido creada:</h3>
+        <a href=""></a>
+        <button class="article__twitter__button">
+          <i class="fab fa-twitter"></i> Compartir en Twitter
+        </button>
+      </div>
+    </article>
+  </form>
 </section>
