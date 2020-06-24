@@ -3,10 +3,6 @@
   background-image: linear-gradient(to bottom, #bfcdd0, #dde9ed);
   height: 100%;
   padding: 38px 40px;
-  @media all and (min-width: 768px){
-    grid-column: 2 / 3;
-    grid-row: 1 / 1;
-  }
 
   &__button {
     height: 30px;
@@ -77,5 +73,14 @@
         align-items: center;
       }
     }
+  }
+}
+
+@include tablet {
+  .preview {
+    grid-column: 2 / 3;
+    grid-row: 1 / 1;
+    padding: 180px 45px 267px;
+    border-radius: 6px;
   }
 }

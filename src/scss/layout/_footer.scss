@@ -1,5 +1,6 @@
 .footer {
   margin: 18px auto 20px;
+  border-top: 1px solid $color-medium-extralight;
 
   @include tablet {
     margin: 10px auto;
@@ -24,6 +25,11 @@
 
     @include tablet {
       margin-bottom: 0;
+    }
+  }
+  .logo {
+    @include tablet {
+      margin-top: 10px;
     }
   }
 
