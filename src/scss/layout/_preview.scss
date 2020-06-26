@@ -18,8 +18,10 @@
     border: 1px solid $color-light;
     border-radius: 15px;
     text-align: center;
-    padding-top: 5px;
     margin-bottom: 20px;
+    background-color:  #bfcdd0;
+    cursor: pointer;
+    outline: none;
   }
 
   &__main {
