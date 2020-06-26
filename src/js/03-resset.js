@@ -13,9 +13,9 @@ let infoPerson ={
 
 //SELECCIONAMOS TODOS LOS INPUTS Y RESET BUTTON
 const resetButton = document.querySelector('.reset__button-js');
-/*const paletteA = document.querySelector('.color1-js');
+const paletteA = document.querySelector('.color1-js');
 const paletteB = document.querySelector('.color2-js');
-const paletteC = document.querySelector('.color3-js');*/
+const paletteC = document.querySelector('.color3-js');
 const fullName = document.querySelector('.fullName-js');
 const job = document.querySelector('.job-js');
 /*const selectImagen = document.querySelector('.addImage-js');*/
@@ -64,3 +64,38 @@ function resetForm(){
 }
 
 resetButton.addEventListener('click', resetForm);
+
+//PINTAR PALETA DE COLORES PREVIEW
+
+function addColorPreview(event){
+  const currentTarget = event.currentTarget;
+  if(currentTarget.classList.contains('.color1-js')){
+    infoPerson.colorSelected = 1;
+  }else if(currentTarget.classList.contains('.color2-js')){
+    infoPerson.colorSelected = 2;
+  }else if(currentTarget.classList.contains('.color3-js')){
+    infoPerson.colorSelected = 3;
+  }
+}
+
+function selectedPalette() {
+  if (infoPerson.colorSelected === 1 || infoPerson.colorSelected === 0) {
+    infoPerson.colorSelected = 1;
+    document.querySelector('.color1-js').checked = true;
+  } else if (infoPerson.colorSelected === 2) {
+    infoPerson.colorSelected = 2;
+    document.querySelector('.color2-js').checked = true;
+  } else if (infoPerson.colorSelected === 3) {
+    infoPerson.colorSelected = 3;
+    document.querySelector('.color3-js').checked = true;
+  }
+}
+
+function choosePalette(){
+  addColorPreview();
+  selectedPalette();
+}
+
+paletteA.addEventListener('change', choosePalette);
+paletteB.addEventListener('change', choosePalette);
+paletteC.addEventListener('change', choosePalette);
