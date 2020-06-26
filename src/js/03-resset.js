@@ -1,6 +1,5 @@
-'use strict';
-
 //CREO UN OBJETO VACIO PARA CADA PERSONA
+'use strict';
 let infoPerson ={
   colorSelected:0,
   name:'',
@@ -14,9 +13,9 @@ let infoPerson ={
 
 //SELECCIONAMOS TODOS LOS INPUTS Y RESET BUTTON
 const resetButton = document.querySelector('.reset__button-js');
-const paletteA = document.querySelector('.color1-js');
+/*const paletteA = document.querySelector('.color1-js');
 const paletteB = document.querySelector('.color2-js');
-const paletteC = document.querySelector('.color3-js');
+const paletteC = document.querySelector('.color3-js');*/
 const fullName = document.querySelector('.fullName-js');
 const job = document.querySelector('.job-js');
 /*const selectImagen = document.querySelector('.addImage-js');*/
@@ -26,7 +25,7 @@ const linkedIn = document.querySelector('.linkedIn-js');
 const gitHub = document.querySelector('.gitHub-js');
 
 //METE EL VALOR DE LOS INPUTS EN EL OBJETO
-function valueInput(event){
+function valueInput(){
   infoPerson.name = fullName.value;
   infoPerson.job = job.value;
   /*infoPerson.addImg = selectImagen.value;*/
