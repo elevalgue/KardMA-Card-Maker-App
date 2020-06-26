@@ -1,9 +1,7 @@
 .footer {
-  margin: 18px auto 20px;
+  margin: 0px auto 0px;
+  border-top: 1px solid $color-medium-extralight;
 
-  @include tablet {
-    margin: 10px auto;
-  }
   .wrapper {
     display: flex;
     flex-direction: column;
@@ -21,9 +19,15 @@
     font-size: 14px;
     color: $color-medium;
     margin-bottom: 12px;
+    margin-top: 18px;
 
     @include tablet {
       margin-bottom: 0;
+    }
+  }
+  .logo {
+    @include tablet {
+      margin-top: 10px;
     }
   }
 

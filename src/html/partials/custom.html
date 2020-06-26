@@ -39,9 +39,9 @@
       </h2>
       <fieldset class="article__fill__form article__form__noborder">
         <label for="fullName">Nombre completo</label>
-        <input id="fullName" type="text" />
+        <input id="fullName" type="text" required />
         <label for="position">Puesto</label>
-        <input id="position" type="text" />
+        <input id="position" type="text" required />
         <div class="article__fill__addimg">
           <h3 class="article__fill__titimg">Imagen de perfil</h3>
           <div class="article__fill__minimg">
@@ -54,13 +54,18 @@
           </div>
         </div>
         <label for="email">Email</label>
-        <input id="email" type="text" />
+        <input
+          id="email"
+          type="text"
+          pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
+          required
+        />
         <label for="phone">Teléfono</label>
-        <input id="phone" type="text" />
+        <input id="phone" type="text" pattern="[0-9]" required />
         <label for="linkedin">Linkedin</label>
-        <input id="linkedin" type="text" />
+        <input id="linkedin" type="text" required />
         <label for="github">Github</label>
-        <input id="github" type="text" />
+        <input id="github" type="text" required />
       </fieldset>
     </article>
     <article class="article__share">

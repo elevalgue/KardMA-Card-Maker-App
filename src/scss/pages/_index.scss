@@ -12,10 +12,21 @@
   margin: auto;
 }
 
-.main__grid{
-  @media all and (min-width: 768px){
+.main__grid {
+  background-image: linear-gradient(
+    to bottom,
+    $color-medium-light,
+    $color-light
+  );
+
+  @include tablet {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: 1fr;
+    padding: 22px 40px;
+  }
+
+  @include desktop {
+    grid-template-columns: 40% 60%;
   }
 }
