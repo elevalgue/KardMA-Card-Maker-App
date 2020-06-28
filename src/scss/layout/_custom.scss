@@ -21,11 +21,16 @@
 .article__custom__artdesign {
   color: $color-dark-medium;
   border-bottom: 1px solid $color-medium-extralight;
+  .form__closed {
+    display: flex;
+    flex-direction: column;
+  }
   .article__custom__titledesign {
     padding-top: 27px;
     padding-bottom: 22px;
     font-size: 18px;
     margin: 0;
+
     .fa-object-ungroup {
       color: $color-secondary-dark;
       font-size: 18px;
