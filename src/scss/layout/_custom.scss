@@ -154,6 +154,9 @@
       border: 1px solid $color-primary-light;
       margin-bottom: 20px;
       width: 100%;
+      font-size: 14px;
+      line-height: 20px;
+      padding: 3px 0 3px 9px;
     }
     .article__fill__addimg {
       .article__fill__titimg {
@@ -175,6 +178,8 @@
           height: 30px;
           border-radius: 3px;
           border: 1px solid $color-secondary-dark;
+          outline: none;
+          cursor: pointer;
         }
         .article__fill__rectangle {
           border: 1px solid $color-primary-light;
@@ -210,7 +215,8 @@
       background-color: $color-secondary-dark;
       border: 1px solid $color-secondary-dark;
       border-radius: 12px;
-      // box-shadow: 0 1px 6px 0 rgba(0, 0, 0, 0.32);
+      outline: none;
+      cursor: pointer;
       color: $color-light;
       margin-bottom: 30px;
       .fa-address-card {
@@ -237,6 +243,8 @@
       font-weight: 400;
       width: 181px;
       height: 30px;
+      outline: none;
+      cursor: pointer;
       .fa-twitter {
         font-size: 18px;
       }
