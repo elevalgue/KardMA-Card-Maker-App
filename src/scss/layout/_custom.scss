@@ -47,6 +47,7 @@
       grid-column: 2 / 3;
       display: flex;
       flex-direction: column;
+      padding: 0px;
       .article__custom__cgreen {
         margin-bottom: 28px;
         display: flex;
@@ -152,6 +153,7 @@
       font-size: 14px;
       line-height: 20px;
       padding: 3px 0 3px 9px;
+      outline: none;
     }
 
     ::placeholder {
