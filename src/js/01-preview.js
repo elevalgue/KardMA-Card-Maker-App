@@ -12,7 +12,7 @@ let infoPerson = {
   gitHub: '',
 };
 
-//SELECCIONAMOS TODOS LOS INPUTS Y RESET BUTTON
+//SELECCIONAMOS TODOS LOS INPUTS Y BUTTONS
 const resetButton = document.querySelector('.reset__button-js');
 const submitButton = document.querySelector('.article__share__button');
 
