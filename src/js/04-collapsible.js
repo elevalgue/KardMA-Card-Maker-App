@@ -2,4 +2,4 @@
 
 // toggle
 
-const designShow = document.querySelector(".form__arrow--design");
+const collapsibleForm = document.querySelectorAll(".");
