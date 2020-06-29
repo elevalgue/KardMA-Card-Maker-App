@@ -49,3 +49,25 @@ email.addEventListener("keyup", handleUpdateEmail);
 telephone.addEventListener("keyup", handleUpdateTelephone);
 linkedIn.addEventListener("keyup", handleUpdateLinkedIn);
 gitHub.addEventListener("keyup", handleUpdateGitHub);
+
+//añadir clase con colores
+previewFullName.classList.add("pallete1-color", "pallete1-borderLeft");
+previewJob.classList.add("pallete1-borderLeft");
+previewIcon1.classList.add("pallete1-color", "pallete1-border");
+previewIcon2.classList.add("pallete1-color", "pallete1-border");
+previewIcon3.classList.add("pallete1-color", "pallete1-border");
+previewIcon4.classList.add("pallete1-color", "pallete1-border");
+
+// function changeColorPreview() {
+//   if (infoPerson.colorSelected === 1 || infoPerson.colorSelected === 0) {
+//     previewFullName.classList.add("pallete1-color", "pallete1-borderLeft");
+//     previewJob.classList.add("pallete1-borderLeft");
+//     previewIcon1.classList.add("pallete1-color", "pallete1-border");
+//     previewIcon2.classList.add("pallete1-color", "pallete1-border");
+//     previewIcon3.classList.add("pallete1-color", "pallete1-border");
+//     previewIcon4.classList.add("pallete1-color", "pallete1-border");
+//     console.log("cambia el color");
+//   } else {
+//     console.log("cambia a otro color");
+//   }
+// }
