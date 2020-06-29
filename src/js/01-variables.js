@@ -24,6 +24,12 @@ const email = document.querySelector('.email-js');
 const telephone = document.querySelector('.telephone-js');
 const linkedIn = document.querySelector('.linkedIn-js');
 const gitHub = document.querySelector('.gitHub-js');
+const previewFullName = document.querySelector(".previewFullName-js");
+const previewJob = document.querySelector(".previewJob-js");
+const previewTelephone = document.querySelector(".previewTelephone-js");
+const previewEmail = document.querySelector(".previewEmail-js");
+const previewLinkedIn = document.querySelector(".previewLinkedIn-js");
+const previewGitHub = document.querySelector(".previewGitHub-js");
 
 //METE EL VALOR DE LOS INPUTS EN EL OBJETO
 function valueInput(){
