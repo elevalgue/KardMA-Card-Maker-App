@@ -19,9 +19,12 @@
     border-radius: 15px;
     text-align: center;
     margin-bottom: 20px;
-    background-color:  #bfcdd0;
+    background-color: #bfcdd0;
     cursor: pointer;
     outline: none;
+    .fa-trash-alt{
+      margin-right: 5px;
+    }
   }
 
   &__main {
@@ -73,6 +76,19 @@
         flex-direction: row;
         justify-content: center;
         align-items: center;
+
+        &__tel {
+          padding: 6px;
+        }
+        &__email {
+          padding: 6px;
+        }
+        &__linkedin {
+          padding: 6px;
+        }
+        &__github {
+          padding: 6px;
+        }
       }
     }
   }
