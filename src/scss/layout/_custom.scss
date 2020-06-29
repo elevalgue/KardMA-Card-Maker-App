@@ -47,6 +47,7 @@
       grid-column: 2 / 3;
       display: flex;
       flex-direction: column;
+      padding: 0px;
       .article__custom__cgreen {
         margin-bottom: 28px;
         display: flex;
@@ -152,7 +153,13 @@
       font-size: 14px;
       line-height: 20px;
       padding: 3px 0 3px 9px;
+      outline: none;
     }
+
+    ::placeholder {
+      color: $color-form-placeholder;
+    }
+
     .article__fill__addimg {
       .article__fill__titimg {
         font-size: 14px;
@@ -216,6 +223,10 @@
       margin-bottom: 30px;
       .fa-address-card {
         margin-right: 9px;
+      }
+      &:disabled {
+        background-color: $color-medium-extralight;
+        border: 1px solid $color-medium-extralight;
       }
     }
   }

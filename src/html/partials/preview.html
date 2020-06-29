@@ -1,15 +1,22 @@
 <section class="preview">
   <div class="wrapper">
     <fieldset class="article__form__noborder">
-      <button type="reset" class="preview__button reset__button-js"><i class="far fa-trash-alt"></i> Reset</button>
+      <button type="reset" class="preview__button reset__button-js">
+        <i class="far fa-trash-alt"></i>Reset
+      </button>
     </fieldset>
     <article class="preview__main">
       <div class="preview__main__name">
-        <h2 class="preview__main__name__title">Nombre Apellido</h2>
-        <h3 class="preview__main__name__subtitle">Front-end developer</h3>
+        <h2 class="preview__main__name__title previewFullName-js">
+          Nombre Apellido
+        </h2>
+        <h3 class="preview__main__name__subtitle previewJob-js">
+          Front-end developer
+        </h3>
       </div>
       <div class="preview__main__photo">
         <img
+          class="previewPhoto-js"
           src="https://via.placeholder.com/240x200"
           alt="Foto de la tarjeta"
         />
@@ -17,23 +24,39 @@
       <nav>
         <ul class="preview__main__icons">
           <li>
-            <div class="preview__main__icons__item">
-              <i class="fas fa-mobile-alt"></i>
+            <div class="preview__main__icons__item previewIconBorder1-js">
+              <a
+                class="preview__main__icons__item__tel previewTelephone-js"
+                href=""
+                ><i class="fas fa-mobile-alt"></i
+              ></a>
             </div>
           </li>
           <li>
-            <div class="preview__main__icons__item">
-              <i class="far fa-envelope"></i>
+            <div class="preview__main__icons__item previewIconBorder2-js">
+              <a
+                class="preview__main__icons__item__email previewEmail-js"
+                href=""
+                ><i class="far fa-envelope"></i
+              ></a>
             </div>
           </li>
           <li>
-            <div class="preview__main__icons__item">
-              <i class="fab fa-linkedin-in"></i>
+            <div class="preview__main__icons__item previewIconBorder3-js">
+              <a
+                class="preview__main__icons__item__linkedin previewLinkedIn-js"
+                href=""
+                ><i class="fab fa-linkedin-in"></i
+              ></a>
             </div>
           </li>
           <li>
-            <div class="preview__main__icons__item">
-              <i class="fab fa-github-alt"></i>
+            <div class="preview__main__icons__item previewIconBorder4-js">
+              <a
+                class="preview__main__icons__item__github previewGitHub-js"
+                href=""
+                ><i class="fab fa-github-alt"></i
+              ></a>
             </div>
           </li>
         </ul>
