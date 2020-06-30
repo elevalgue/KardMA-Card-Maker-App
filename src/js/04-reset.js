@@ -1,4 +1,9 @@
 //FUNCION PARA RESETEAR FORMULARIO
+const defaultPerson = {
+  name: 'Nombre Apellido',
+  job: 'Front-end Developer',
+};
+
 function resetForm() {
   infoPerson.colorSelected = 0;
   infoPerson.name = "";
@@ -15,9 +20,17 @@ function resetForm() {
   telephone.value = "";
   linkedIn.value = "";
   gitHub.value = "";
+  previewFullName.innerHTML = 'Nombre Apellido';
+  previewJob.innerHTML = 'Front-End Developer';
+}
+
+function resetPreview(){
+  const fullNameFilled = fullName.value;
+  const jobFilled = job.value;
 }
 
 resetButton.addEventListener("click", resetForm);
+resetButton.addEventListener('click', resetPreview);
 
 //PINTAR PALETA DE COLORES PREVIEW
 

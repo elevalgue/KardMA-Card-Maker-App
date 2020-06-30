@@ -18,6 +18,8 @@ function handleUpdateJob() {
   }
 }
 
+
+
 // FUNCION PARA RELLENAR PREVIEW -- EMAIL
 function handleUpdateEmail() {
   const emailFilled = email.value;

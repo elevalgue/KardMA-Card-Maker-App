@@ -178,6 +178,11 @@
       line-height: 20px;
       padding: 3px 0 3px 9px;
       outline: none;
+      &:focus {
+        border: 1px solid $color-primary-light;
+        outline: none;
+        box-shadow: 0 0 4px 0 rgba($color-primary-light, 0.9);
+      }
     }
 
     ::placeholder {
@@ -194,10 +199,11 @@
       }
       .article__fill__minimg {
         display: flex;
-        .article__fill__button {
+        position: relative;
+        .article__fill__addImg{
           background-color: $color-secondary-dark;
           color: white;
-          font-size: 14px;
+          font-size: 13.5px;
           line-height: 20px;
           padding: 0 22px 0 22px;
           width: 140px;
@@ -205,7 +211,18 @@
           border-radius: 3px;
           border: 1px solid $color-secondary-dark;
           outline: none;
-          cursor: pointer;
+          margin-bottom: 20px;
+          box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.32);
+        }
+        input[type='file'] {
+          position: absolute;
+          top: 0;
+          left: 10px;
+          width: 140px;
+          opacity: 0;
+          &:hover ~ .article__fill__addImg {
+            background-color: #e95626;
+         }
         }
         .article__fill__rectangle {
           border: 1px solid $color-primary-light;
@@ -287,6 +304,7 @@
       height: 30px;
       outline: none;
       cursor: pointer;
+      box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.32);
       .fa-twitter {
         font-size: 18px;
       }
