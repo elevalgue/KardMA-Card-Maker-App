@@ -21,15 +21,26 @@
 .article__custom__artdesign {
   color: $color-dark-medium;
   border-bottom: 1px solid $color-medium-extralight;
-  .article__custom__titledesign {
-    padding-top: 27px;
-    padding-bottom: 22px;
-    font-size: 18px;
-    margin: 0;
-    .fa-object-ungroup {
-      color: $color-secondary-dark;
+  .form__closed__design {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    .article__custom__titledesign {
+      padding-top: 27px;
+      padding-bottom: 22px;
       font-size: 18px;
-      margin-right: 10px;
+      margin: 0;
+      .fa-object-ungroup {
+        color: $color-secondary-dark;
+        font-size: 18px;
+        margin-right: 10px;
+      }
+    }
+    .form__arrow--design {
+      .fa-chevron-down {
+        margin-top: 27px;
+        transform: rotate(180deg);
+      }
     }
   }
   .article__custom__ccolor {
@@ -120,21 +131,34 @@
     }
   }
 }
+
 //ARTICLE FILL
 .article__fill {
   color: $color-dark-medium;
   border-bottom: 1px solid $color-medium-extralight;
-  .article__fill__title {
-    padding-top: 27px;
-    padding-bottom: 22px;
-    font-size: 18px;
-    margin: 0;
-    .fa-keyboard {
-      color: $color-secondary-dark;
+  .form__closed__fill {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    .article__fill__title {
+      padding-top: 27px;
+      padding-bottom: 22px;
       font-size: 18px;
-      margin-right: 10px;
+      margin: 0;
+      .fa-keyboard {
+        color: $color-secondary-dark;
+        font-size: 18px;
+        margin-right: 10px;
+      }
+    }
+    .form__arrow--fill {
+      .fa-chevron-down {
+        margin-top: 27px;
+        transform: rotate(180deg);
+      }
     }
   }
+
   .article__fill__form {
     padding: 0px;
     label {
@@ -154,6 +178,11 @@
       line-height: 20px;
       padding: 3px 0 3px 9px;
       outline: none;
+      &:focus {
+        border: 1px solid $color-primary-light;
+        outline: none;
+        box-shadow: 0 0 4px 0 rgba($color-primary-light, 0.9);
+      }
     }
 
     ::placeholder {
@@ -170,10 +199,11 @@
       }
       .article__fill__minimg {
         display: flex;
-        .article__fill__button {
+        position: relative;
+        .article__fill__addImg{
           background-color: $color-secondary-dark;
           color: white;
-          font-size: 14px;
+          font-size: 13.5px;
           line-height: 20px;
           padding: 0 22px 0 22px;
           width: 140px;
@@ -181,7 +211,18 @@
           border-radius: 3px;
           border: 1px solid $color-secondary-dark;
           outline: none;
-          cursor: pointer;
+          margin-bottom: 20px;
+          box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.32);
+        }
+        input[type='file'] {
+          position: absolute;
+          top: 0;
+          left: 10px;
+          width: 140px;
+          opacity: 0;
+          &:hover ~ .article__fill__addImg {
+            background-color: #e95626;
+         }
         }
         .article__fill__rectangle {
           border: 1px solid $color-primary-light;
@@ -197,17 +238,29 @@
 .article__share {
   color: $color-dark-medium;
   border-bottom: 1px solid $color-medium-extralight;
-  .article__share__title {
-    padding-top: 27px;
-    padding-bottom: 22px;
-    font-size: 18px;
-    margin: 0;
-    .fa-share-alt {
-      color: $color-secondary-dark;
+  .form__closed__share {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    .article__share__title {
+      padding-top: 27px;
+      padding-bottom: 22px;
       font-size: 18px;
-      margin-right: 10px;
+      margin: 0;
+      .fa-share-alt {
+        color: $color-secondary-dark;
+        font-size: 18px;
+        margin-right: 10px;
+      }
+    }
+    .form__arrow--share {
+      .fa-chevron-down {
+        margin-top: 27px;
+        transform: rotate(180deg);
+      }
     }
   }
+
   .article__share__container {
     border-bottom: 1px $color-medium-light;
     text-align: center;
@@ -251,9 +304,17 @@
       height: 30px;
       outline: none;
       cursor: pointer;
+      box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.32);
       .fa-twitter {
         font-size: 18px;
       }
     }
   }
+}
+
+.hidden {
+  display: none;
+}
+.closed {
+  transform: rotate(180deg);
 }

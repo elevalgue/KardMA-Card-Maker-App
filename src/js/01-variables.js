@@ -1,14 +1,14 @@
 'use strict';
 //OBJETO
-let infoPerson ={
-  colorSelected:0,
-  name:'',
-  job:'',
+let infoPerson = {
+  colorSelected: 0,
+  name: '',
+  job: '',
   /*addImg:'',*/
-  email:'',
-  telephone:'',
-  linkedIn:'',
-  gitHub:''
+  email: '',
+  telephone: '',
+  linkedIn: '',
+  gitHub: '',
 };
 
 //VARIABLES
@@ -24,15 +24,28 @@ const email = document.querySelector('.email-js');
 const telephone = document.querySelector('.telephone-js');
 const linkedIn = document.querySelector('.linkedIn-js');
 const gitHub = document.querySelector('.gitHub-js');
-const previewFullName = document.querySelector(".previewFullName-js");
-const previewJob = document.querySelector(".previewJob-js");
-const previewTelephone = document.querySelector(".previewTelephone-js");
-const previewEmail = document.querySelector(".previewEmail-js");
-const previewLinkedIn = document.querySelector(".previewLinkedIn-js");
-const previewGitHub = document.querySelector(".previewGitHub-js");
+const previewFullName = document.querySelector('.previewFullName-js');
+const previewJob = document.querySelector('.previewJob-js');
+const previewTelephone = document.querySelector('.previewTelephone-js');
+const previewEmail = document.querySelector('.previewEmail-js');
+const previewLinkedIn = document.querySelector('.previewLinkedIn-js');
+const previewGitHub = document.querySelector('.previewGitHub-js');
+const previewIcon1 = document.querySelector('.previewIconBorder1-js');
+const previewIcon2 = document.querySelector('.previewIconBorder2-js');
+const previewIcon3 = document.querySelector('.previewIconBorder3-js');
+const previewIcon4 = document.querySelector('.previewIconBorder4-js');
+const formOpenDesign = document.querySelector('.form__open__design');
+const formCloseDesign = document.querySelector('.form__closed__design');
+const divArrowDesign = document.querySelector('.form__arrow--design');
+const formOpenFill = document.querySelector('.form__open__fill');
+const formCloseFill = document.querySelector('.form__closed__fill');
+const divArrowFill = document.querySelector('.form__arrow--fill');
+const formOpenShare = document.querySelector('.form__open__share');
+const formCloseShare = document.querySelector('.form__closed__share');
+const divArrowShare = document.querySelector('.form__arrow--share');
 
 //METE EL VALOR DE LOS INPUTS EN EL OBJETO
-function valueInput(){
+function valueInput() {
   infoPerson.name = fullName.value;
   infoPerson.job = job.value;
   /*infoPerson.addImg = selectImagen.value;*/
