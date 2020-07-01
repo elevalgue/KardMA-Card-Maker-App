@@ -17,15 +17,17 @@
     font-family: $font-primary;
     font-size: 14px;
     color: $color-medium-extralight;
-    margin-bottom: 12px;
-    margin-top: 18px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
     @include tablet {
       margin-top: 0;
     }
   }
   .logo {
-    margin-bottom: 20px;
+    margin-bottom: 10px;
     @include tablet {
       margin-top: 10px;
     }

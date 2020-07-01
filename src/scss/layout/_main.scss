@@ -1,39 +1,39 @@
 .container {
   background-color: $color-medium-light;
-  height: 88vh;
+  text-align: center;
+  padding: 95px 35px 30px 35px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: flex-end;
-  padding-bottom: 30px;
-
   @include tablet {
-    padding-bottom: 59px;
+    padding: 350px 175px 60px 175px;
   }
 
   &__logoBox {
-    width: 250px;
+    padding-top: 96px;
+    background-image: url(../images/logo-awesome-profile-cards.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
     height: 63px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
+    width: 250px;
     @include tablet {
-      width: 419px;
       height: 105px;
+      width: 420px;
     }
   }
 
   &__title {
     font-family: $font-terciary;
     color: $color-secondary-dark;
-    font-size: 20px;
+    font-size: 19px;
     font-weight: 900;
     margin-top: 35px;
-    margin-bottom: 0px;
+    margin-bottom: 4px;
 
     @include tablet {
       margin-top: 31px;
+      font-size: 24px;
     }
   }
   &__subtitle {
@@ -42,6 +42,10 @@
     font-size: 13px;
     font-weight: 400;
     text-align: center;
+
+    @include tablet {
+      font-size: 16px;
+    }
 
     & span {
       display: block;
@@ -52,43 +56,108 @@
     border: solid 1px rgba($color-secondary-dark, 0.2);
     border-radius: 4px;
     width: 268px;
-    padding-top: 15px;
-    padding-bottom: 10px;
-    padding-left: 20px;
-    padding-right: 20px;
+    height: 74px;
+    padding: 15px 10px 20px 20px;
     color: $color-secondary-dark;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 24px;
-    margin-top: 18px;
-    margin-bottom: 39px;
+    margin: 18px 0 39px 0;
 
     @include tablet {
-      margin-top: 27px;
-      margin-bottom: 186px;
+      margin: 27px 0 186px 0;
+      width: 325px;
+      height: 86px;
     }
 
-    & article {
+    .step1 {
       display: flex;
       flex-direction: column;
       align-items: center;
+      justify-content: center;
+      .fa-object-ungroup{
+        font-size: 23px;
 
-      & p {
+        @include tablet{
+          font-size: 28px;
+        }
+      }
+      .articleTitle {
         font-family: $font-primary;
         color: $color-dark-medium;
         font-size: 13px;
         font-weight: 400;
+        text-transform: capitalize;
+        padding: 2px 0 5px 0;
+        
+        @include tablet{
+          font-size: 16px;
+        }
+      }
+    }
+    .step2 {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      .fa-keyboard{
+        font-size: 23px;
+        
+        @include tablet{
+          font-size: 28px;
+        }
+      }
+      .articleTitle {
+        font-family: $font-primary;
+        color: $color-dark-medium;
+        font-size: 13px;
+        font-weight: 400;
+        text-transform: capitalize;
+        padding: 2px 0 5px 0;
+        
+        @include tablet{
+          font-size: 16px;
+        }
+      }
+    }
+    .step3 {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      .fa-share-alt{
+        font-size: 23px;
+        
+        @include tablet{
+          font-size: 28px;
+        }
+      }
+      .articleTitle {
+        font-family: $font-primary;
+        color: $color-dark-medium;
+        font-size: 13px;
+        font-weight: 400;
+        text-transform: capitalize;
+        padding: 2px 0 5px 0;
+        
+        @include tablet{
+          font-size: 16px;
+        }
       }
     }
   }
   &__btn {
+    height: 42px;
+    width: 129px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     cursor: pointer;
     background-color: $color-primary-medium;
     border-radius: 21px;
     color: $color-light;
     font-size: 16px;
     font-family: $font-primary;
-    text-align: center;
     text-transform: uppercase;
     padding: 10px 20px;
 
