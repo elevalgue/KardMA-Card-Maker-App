@@ -1,8 +1,8 @@
 // FUNCION PARA RELLENAR PREVIEW -- NAME
 function handleUpdateFullName() {
   const fullNameFilled = fullName.value;
-  if (fullName.value === "") {
-    previewFullName.innerHTML = "Nombre Apellido";
+  if (fullName.value === '') {
+    previewFullName.innerHTML = 'Nombre Apellido';
   } else {
     previewFullName.innerHTML = fullNameFilled;
   }
@@ -11,54 +11,52 @@ function handleUpdateFullName() {
 // FUNCION PARA RELLENAR PREVIEW -- JOB
 function handleUpdateJob() {
   const jobFilled = job.value;
-  if (job.value === "") {
-    previewJob.innerHTML = "Front-end developer";
+  if (job.value === '') {
+    previewJob.innerHTML = 'Front-end developer';
   } else {
     previewJob.innerHTML = jobFilled;
   }
 }
 
-
-
 // FUNCION PARA RELLENAR PREVIEW -- EMAIL
 function handleUpdateEmail() {
   const emailFilled = email.value;
-  return (previewEmail.href = "mailto:" + emailFilled);
+  return (previewEmail.href = 'mailto:' + emailFilled);
 }
 
 // FUNCION PARA RELLENAR PREVIEW -- TELEFONO
 function handleUpdateTelephone() {
   const telephoneFilled = telephone.value;
-  return (previewTelephone.href = "tel:" + telephoneFilled);
+  return (previewTelephone.href = 'tel:' + telephoneFilled);
 }
 
 // FUNCION PARA RELLENAR PREVIEW -- LINKEDIN
 function handleUpdateLinkedIn() {
   const linkedInFilled = linkedIn.value;
-  return (previewLinkedIn.href = linkedInFilled);
+  return (previewLinkedIn.href = `https://www.linkedin.com/in/${linkedInFilled}`);
 }
 
 // FUNCION PARA RELLENAR PREVIEW -- GITHUB
 function handleUpdateGitHub() {
   const gitHubFilled = gitHub.value;
-  return (previewGitHub.href = gitHubFilled);
+  return (previewGitHub.href = `https://github.com/${gitHubFilled}`);
 }
 
 // LISTENERS
-fullName.addEventListener("keyup", handleUpdateFullName);
-job.addEventListener("keyup", handleUpdateJob);
-email.addEventListener("keyup", handleUpdateEmail);
-telephone.addEventListener("keyup", handleUpdateTelephone);
-linkedIn.addEventListener("keyup", handleUpdateLinkedIn);
-gitHub.addEventListener("keyup", handleUpdateGitHub);
+fullName.addEventListener('keyup', handleUpdateFullName);
+job.addEventListener('keyup', handleUpdateJob);
+email.addEventListener('keyup', handleUpdateEmail);
+telephone.addEventListener('keyup', handleUpdateTelephone);
+linkedIn.addEventListener('keyup', handleUpdateLinkedIn);
+gitHub.addEventListener('keyup', handleUpdateGitHub);
 
 //añadir clase con colores
-previewFullName.classList.add("pallete1-color", "pallete1-borderLeft");
-previewJob.classList.add("pallete1-borderLeft");
-previewIcon1.classList.add("pallete1-color", "pallete1-border");
-previewIcon2.classList.add("pallete1-color", "pallete1-border");
-previewIcon3.classList.add("pallete1-color", "pallete1-border");
-previewIcon4.classList.add("pallete1-color", "pallete1-border");
+previewFullName.classList.add('pallete1-color', 'pallete1-borderLeft');
+previewJob.classList.add('pallete1-borderLeft');
+previewIcon1.classList.add('pallete1-color', 'pallete1-border');
+previewIcon2.classList.add('pallete1-color', 'pallete1-border');
+previewIcon3.classList.add('pallete1-color', 'pallete1-border');
+previewIcon4.classList.add('pallete1-color', 'pallete1-border');
 
 // function changeColorPreview() {
 //   if (infoPerson.colorSelected === 1 || infoPerson.colorSelected === 0) {
