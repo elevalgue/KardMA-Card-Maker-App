@@ -25,6 +25,7 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    cursor: pointer;
     .article__custom__titledesign {
       padding-top: 27px;
       padding-bottom: 22px;
@@ -140,6 +141,7 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    cursor: pointer;
     .article__fill__title {
       padding-top: 27px;
       padding-bottom: 22px;
@@ -242,6 +244,7 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    cursor: pointer;
     .article__share__title {
       padding-top: 27px;
       padding-bottom: 22px;
@@ -318,5 +321,6 @@
 }
 .closed {
   transform: rotate(180deg);
+  color: $color-secondary-dark;
 }
 

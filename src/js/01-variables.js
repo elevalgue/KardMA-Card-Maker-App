@@ -43,6 +43,7 @@ const divArrowFill = document.querySelector('.form__arrow--fill');
 const formOpenShare = document.querySelector('.form__open__share');
 const formCloseShare = document.querySelector('.form__closed__share');
 const divArrowShare = document.querySelector('.form__arrow--share');
+const startButton = document.querySelector('.container__btn-js');
 
 //METE EL VALOR DE LOS INPUTS EN EL OBJETO
 function valueInput() {
