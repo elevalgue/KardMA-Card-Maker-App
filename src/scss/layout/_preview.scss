@@ -24,6 +24,9 @@
     background-color: #bfcdd0;
     cursor: pointer;
     outline: none;
+    &:hover{
+      box-shadow: 0 4px 16px rgba(124, 163, 219, 0.5);
+    }
     .fa-trash-alt {
       margin-right: 5px;
     }

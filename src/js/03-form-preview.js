@@ -1,6 +1,3 @@
-<<<<<<< HEAD
-"use strict";
-
 //FUNCIONES PARA RELLENAR FULLNAME
 function valueInputName() {
   return (infoPerson.name = fullName.value);
@@ -8,18 +5,17 @@ function valueInputName() {
 function resultFullName(fullNameFilled) {
   if (fullName.value === "") {
     previewFullName.innerHTML = "Nombre Apellido";
-=======
+  }
+}
 // FUNCION PARA RELLENAR PREVIEW -- NAME
 function handleUpdateFullName() {
   const fullNameFilled = fullName.value;
   if (fullName.value === '') {
     previewFullName.innerHTML = 'Nombre Apellido';
->>>>>>> 0289b0bed0744a691ba8f71a65dab5d6977f455b
   } else {
     previewFullName.innerHTML = fullNameFilled;
   }
 }
-<<<<<<< HEAD
 function handleInputFullName() {
   const fullNameFilled = valueInputName();
   resultFullName(fullNameFilled);
@@ -31,20 +27,18 @@ function valueInputJob() {
 function resultJob(jobFilled) {
   if (job.value === "") {
     previewJob.innerHTML = "Front-end developer";
-    console.log("errror");
-=======
+  }
+}
 
 // FUNCION PARA RELLENAR PREVIEW -- JOB
 function handleUpdateJob() {
   const jobFilled = job.value;
   if (job.value === '') {
     previewJob.innerHTML = 'Front-end developer';
->>>>>>> 0289b0bed0744a691ba8f71a65dab5d6977f455b
   } else {
     previewJob.innerHTML = jobFilled;
   }
 }
-<<<<<<< HEAD
 function handleInputJob() {
   const jobFilled = valueInputJob();
   resultJob(jobFilled);
@@ -52,7 +46,6 @@ function handleInputJob() {
 //LISTENERS -- copiado para poder usarlo
 fullName.addEventListener("keyup", handleInputFullName);
 job.addEventListener("keyup", handleInputJob);
-=======
 
 // FUNCION PARA RELLENAR PREVIEW -- EMAIL
 function handleUpdateEmail() {
@@ -94,17 +87,17 @@ previewIcon2.classList.add('pallete1-color', 'pallete1-border');
 previewIcon3.classList.add('pallete1-color', 'pallete1-border');
 previewIcon4.classList.add('pallete1-color', 'pallete1-border');
 
-// function changeColorPreview() {
-//   if (infoPerson.colorSelected === 1 || infoPerson.colorSelected === 0) {
-//     previewFullName.classList.add("pallete1-color", "pallete1-borderLeft");
-//     previewJob.classList.add("pallete1-borderLeft");
-//     previewIcon1.classList.add("pallete1-color", "pallete1-border");
-//     previewIcon2.classList.add("pallete1-color", "pallete1-border");
-//     previewIcon3.classList.add("pallete1-color", "pallete1-border");
-//     previewIcon4.classList.add("pallete1-color", "pallete1-border");
-//     console.log("cambia el color");
-//   } else {
-//     console.log("cambia a otro color");
-//   }
-// }
->>>>>>> 0289b0bed0744a691ba8f71a65dab5d6977f455b
+/*function changeColorPreview() {
+    if (infoPerson.colorSelected === 1 || infoPerson.colorSelected === 0) {
+      previewFullName.classList.add("pallete1-color", "pallete1-borderLeft");
+      previewJob.classList.add("pallete1-borderLeft");
+      previewIcon1.classList.add("pallete1-color", "pallete1-border");
+      previewIcon2.classList.add("pallete1-color", "pallete1-border");
+      previewIcon3.classList.add("pallete1-color", "pallete1-border");
+      previewIcon4.classList.add("pallete1-color", "pallete1-border");
+      console.log("cambia el color");
+    } else {
+      console.log("cambia a otro color");
+    }
+  }
+  changeColorPreview();*/
