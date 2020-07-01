@@ -280,6 +280,7 @@
       &:disabled {
         background-color: $color-medium-extralight;
         border: 1px solid $color-medium-extralight;
+        cursor: not-allowed;
       }
     }
   }
@@ -318,3 +319,4 @@
 .closed {
   transform: rotate(180deg);
 }
+

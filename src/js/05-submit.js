@@ -41,6 +41,7 @@ function validateForm() {
     submitButton.setAttribute('disabled', 'disabled');
   } else {
     submitButton.removeAttribute('disabled');
+    submitButton.classList.remove('cursor__btn__submit');
   }
 }
 
