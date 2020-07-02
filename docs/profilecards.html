@@ -34,60 +34,38 @@
             </fieldset>
             <article class="preview__main">
               <div class="preview__main__name">
-                <h2 class="preview__main__name__title previewFullName-js">
-                  Nombre Apellido
-                </h2>
-                <h3 class="preview__main__name__subtitle previewJob-js">
-                  Front-end developer
-                </h3>
+                <h2 class="preview__main__name__title previewFullName-js">Nombre Apellido</h2>
+                <h3 class="preview__main__name__subtitle previewJob-js">Front-End Developer</h3>
               </div>
-              <div class="preview__main__photo">
-                <img
-                  class="previewPhoto-js"
-                  src="https://via.placeholder.com/240x200"
-                  alt="Foto de la tarjeta"
-                />
-              </div>
+              <div class="preview__main__photo js__profile-preview"></div>
               <nav>
                 <ul class="preview__main__icons">
-                  <li>
+                  <li class="li-ssmm">
                     <div class="preview__main__icons__item previewIconBorder1-js">
-                      <a
-                        class="preview__main__icons__item__tel previewTelephone-js"
-                        href="tel:"
-                        target="_blank"
-                        ><i class="fas fa-mobile-alt"></i
-                      ></a>
+                      <a class="preview__main__icons__item__tel previewTelephone-js" href="tel:" target="_blank">
+                        <i class="fas fa-mobile-alt"></i>
+                      </a>
                     </div>
                   </li>
-                  <li>
+                  <li class="li-ssmm">
                     <div class="preview__main__icons__item previewIconBorder2-js">
-                      <a
-                        class="preview__main__icons__item__email previewEmail-js"
-                        href="mailto:"
-                        target="_blank"
-                        ><i class="far fa-envelope"></i
-                      ></a>
+                      <a class="preview__main__icons__item__email previewEmail-js" href="mailto:" target="_blank">
+                        <i class="far fa-envelope"></i>
+                      </a>
                     </div>
                   </li>
-                  <li>
+                  <li class="li-ssmm">
                     <div class="preview__main__icons__item previewIconBorder3-js">
-                      <a
-                        class="preview__main__icons__item__linkedin previewLinkedIn-js"
-                        href=""
-                        target="_blank"
-                        ><i class="fab fa-linkedin-in"></i
-                      ></a>
+                      <a class="preview__main__icons__item__linkedin previewLinkedIn-js" href="" target="_blank">
+                        <i class="fab fa-linkedin-in"></i>
+                      </a>
                     </div>
                   </li>
-                  <li>
+                  <li class="li-ssmm">
                     <div class="preview__main__icons__item previewIconBorder4-js">
-                      <a
-                        class="preview__main__icons__item__github previewGitHub-js"
-                        href=""
-                        target="_blank"
-                        ><i class="fab fa-github-alt"></i
-                      ></a>
+                      <a class="preview__main__icons__item__github previewGitHub-js" href="" target="_blank">
+                        <i class="fab fa-github-alt"></i>
+                      </a>
                     </div>
                   </li>
                 </ul>
@@ -116,7 +94,7 @@
                   <fieldset class="article__custom__colors article__form__noborder">
                     <div class="article__custom__cgreen">
                       <input
-                        class="color1-js"
+                        class="palette-js"
                         type="radio"
                         value="colors-red"
                         name="select-color"
@@ -128,7 +106,7 @@
                     </div>
                     <div class="article__custom__cred">
                       <input
-                        class="color2-js"
+                        class="palette-js"
                         type="radio"
                         value="colors-green"
                         name="select-color"
@@ -139,7 +117,7 @@
                     </div>
                     <div class="article__custom__cmix">
                       <input
-                        class="color3-js"
+                        class="palette-js"
                         type="radio"
                         value="colors-mix"
                         name="select-color"
@@ -184,14 +162,14 @@
                   />
                   <div class="article__fill__addimg">
                     <h3 class="article__fill__titimg">Imagen de perfil</h3>
-                    <div class="article__fill__minimg">
-                      <input
-                        class="article__fill__button addImage-js"
-                        type="file"
-                        value="Añadir imagen"
-                      />
-                      <button type="button" class="article__fill__addImg">Añadir Imagen</button>
-                      <div class="article__fill__rectangle"></div>
+                    <div class="action article__fill__minimg">
+                      <input type="file" name="" id="img-selector" class="action__hiddenField js__profile-upload-btn article__fill__button "/>
+                      <button class="action__upload-btn js__profile-trigger article__fill__addImg" type="button">
+                        Añadir Imagen
+                      </button>
+                      <div class="profile__preview js__profile-preview article__fill__rectangle">
+                        <div class="profile__image js__profile-image addImage-js"></div>
+                      </div>
                     </div>
                   </div>
                   <label for="email">Email</label>
