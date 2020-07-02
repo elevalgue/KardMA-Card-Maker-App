@@ -46,6 +46,8 @@ const divArrowShare = document.querySelector(".form__arrow--share");
 const startButton = document.querySelector(".container__btn-js");
 const previewCard = document.querySelector('.preview');
 const palettes = document.querySelectorAll('.palette-js');
+const miniImg = document.querySelector('.js__profile-image');
+const maxImg = document.querySelector('.js__profile-preview');
 
 //METE EL VALOR DE LOS INPUTS EN EL OBJETO
 function valueInput() {
