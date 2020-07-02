@@ -16,8 +16,6 @@ function resetForm() {
   gitHub.value = "";
   previewFullName.innerHTML = "Nombre Apellido";
   previewJob.innerHTML = "Front-End Developer";
-  //profileImage.style.backgroundImage = 'url()';
-  //profilePreview.style.backgroundImage = 'url()';
 }
 
 function resetPreview() {

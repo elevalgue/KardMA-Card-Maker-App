@@ -87,17 +87,23 @@ previewIcon2.classList.add('pallete1-color', 'pallete1-border');
 previewIcon3.classList.add('pallete1-color', 'pallete1-border');
 previewIcon4.classList.add('pallete1-color', 'pallete1-border');
 
-/*function changeColorPreview() {
-    if (infoPerson.colorSelected === 1 || infoPerson.colorSelected === 0) {
-      previewFullName.classList.add("pallete1-color", "pallete1-borderLeft");
-      previewJob.classList.add("pallete1-borderLeft");
-      previewIcon1.classList.add("pallete1-color", "pallete1-border");
-      previewIcon2.classList.add("pallete1-color", "pallete1-border");
-      previewIcon3.classList.add("pallete1-color", "pallete1-border");
-      previewIcon4.classList.add("pallete1-color", "pallete1-border");
-      console.log("cambia el color");
-    } else {
-      console.log("cambia a otro color");
-    }
+//CAMBIAR LOS COLORES CON LAS PALETAS
+
+function changeColors(event){
+  if(event.target === palettes[0]){
+    previewCard.classList.add('palette1-js');
+    previewCard.classList.remove('palette2-js');
+    previewCard.classList.remove('palette3-js');
+  }else if(event.target === palettes[1]){
+    previewCard.classList.add('palette2-js');
+    previewCard.classList.remove('palette1-js');
+    previewCard.classList.remove('palette3-js');
+  }else if(event.target === palettes[2]){
+    previewCard.classList.add('palette3-js');
+    previewCard.classList.remove('palette1-js');
+    previewCard.classList.remove('palette2-js');
   }
-  changeColorPreview();*/
+}
+for (const palette of palettes){
+  palette.addEventListener('change', changeColors);
+}

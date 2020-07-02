@@ -44,7 +44,8 @@ const formOpenShare = document.querySelector(".form__open__share");
 const formCloseShare = document.querySelector(".form__closed__share");
 const divArrowShare = document.querySelector(".form__arrow--share");
 const startButton = document.querySelector(".container__btn-js");
-//const profilePreview = document.querySelector('.js__profile-preview');
+const previewCard = document.querySelector('.preview');
+const palettes = document.querySelectorAll('.palette-js');
 
 //METE EL VALOR DE LOS INPUTS EN EL OBJETO
 function valueInput() {
