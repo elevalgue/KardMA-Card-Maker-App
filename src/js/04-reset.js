@@ -10,13 +10,14 @@ function resetForm() {
   infoPerson.github = "";
   fullName.value = "";
   job.value = "";
-  selectImagen.value = "";
   email.value = "";
   telephone.value = "";
   linkedIn.value = "";
   gitHub.value = "";
   previewFullName.innerHTML = "Nombre Apellido";
   previewJob.innerHTML = "Front-End Developer";
+  //profileImage.style.backgroundImage = 'url()';
+  //profilePreview.style.backgroundImage = 'url()';
 }
 
 function resetPreview() {

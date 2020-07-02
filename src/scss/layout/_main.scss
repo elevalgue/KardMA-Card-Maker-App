@@ -11,15 +11,15 @@
 
   &__logoBox {
     padding-top: 96px;
-    background-image: url(../images/logo-awesome-profile-cards.svg);
+    background-image: url(../images/logo-cards/logo-kardMA.png);
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;
-    height: 63px;
-    width: 250px;
+    height: 150px;
+    width: 350px;
     @include tablet {
-      height: 105px;
-      width: 420px;
+      height: 220px;
+      width: 450px;
     }
   }
 
