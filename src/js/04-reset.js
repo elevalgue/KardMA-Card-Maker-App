@@ -1,13 +1,13 @@
 //FUNCION PARA RESETEAR FORMULARIO
-function resetForm(){
-  infoPerson.colorSelected = 0;
+function resetForm() {
+  infoPerson.palette = 0;
   infoPerson.name = '';
   infoPerson.job = '';
   infoPerson.addImg = '';
   infoPerson.email = '';
   infoPerson.telephone = '';
-  infoPerson.linkedIn = '';
-  infoPerson.gitHub = '';
+  infoPerson.linkedin = '';
+  infoPerson.github = '';
   fullName.value = '';
   job.value = '';
   /*selectImagen.value = '';*/
@@ -21,13 +21,13 @@ resetButton.addEventListener('click', resetForm);
 
 //PINTAR PALETA DE COLORES PREVIEW
 
-function addColorPreview(event){
+function addColorPreview(event) {
   const currentTarget = event.currentTarget;
-  if(currentTarget.classList.contains('.color1-js')){
+  if (currentTarget.classList.contains('.color1-js')) {
     infoPerson.colorSelected = 1;
-  }else if(currentTarget.classList.contains('.color2-js')){
+  } else if (currentTarget.classList.contains('.color2-js')) {
     infoPerson.colorSelected = 2;
-  }else if(currentTarget.classList.contains('.color3-js')){
+  } else if (currentTarget.classList.contains('.color3-js')) {
     infoPerson.colorSelected = 3;
   }
 }
@@ -45,7 +45,7 @@ function selectedPalette() {
   }
 }
 
-function choosePalette(){
+function choosePalette() {
   addColorPreview();
   selectedPalette();
 }

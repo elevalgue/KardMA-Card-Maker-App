@@ -1,14 +1,14 @@
 'use strict';
 //OBJETO
 let infoPerson = {
-  colorSelected: 0,
+  palette: 0, //antes colorSelected
   name: '',
   job: '',
   /*addImg:'',*/
   email: '',
-  telephone: '',
-  linkedIn: '',
-  gitHub: '',
+  phone: '', //antes telephone
+  linkedin: '', //antes linkedIn
+  github: '', //antes gitHub
 };
 
 //VARIABLES
@@ -46,9 +46,9 @@ function valueInput() {
   infoPerson.job = job.value;
   /*infoPerson.addImg = selectImagen.value;*/
   infoPerson.email = email.value;
-  infoPerson.telephone = Number(telephone.value);
-  infoPerson.linkedIn = linkedIn.value;
-  infoPerson.gitHub = gitHub.value;
+  infoPerson.phone = Number(telephone.value);
+  infoPerson.linkedin = linkedIn.value;
+  infoPerson.github = gitHub.value;
 }
 
 //LISTENERS
