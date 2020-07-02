@@ -24,7 +24,7 @@
     background-color: #bfcdd0;
     cursor: pointer;
     outline: none;
-    &:hover{
+    &:hover {
       box-shadow: 0 4px 16px rgba(124, 163, 219, 0.5);
     }
     .fa-trash-alt {
@@ -63,6 +63,9 @@
     }
     &__photo {
       height: 200px;
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-image: url(../images/default-image-flower-fill.svg);
     }
 
     &__icons {

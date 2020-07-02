@@ -351,17 +351,18 @@
   margin: 0 auto;
   display: flex;
   justify-content: center;
+  width: 30px;
 }
 .profile__image,
 .profile__preview {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  border: 1px solid #ccc;
 }
 .profile__image {
   width: 30px;
   height: 30px;
+  background-image: url(../images/default-image-flower-fill.svg);
 }
 
 .profile__preview {
