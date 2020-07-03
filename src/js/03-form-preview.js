@@ -1,3 +1,5 @@
+'use strict'
+
 //FUNCIONES PARA RELLENAR FULLNAME
 function valueInputName() {
   return (infoPerson.name = fullName.value);
@@ -21,31 +23,30 @@ function handleInputFullName() {
   resultFullName(fullNameFilled);
 }
 //FUNCIONES PARA RELLENAR JOB
-function valueInputJob() {
-  return (infoPerson.job = job.value);
-}
-function resultJob(jobFilled) {
-  if (job.value === "") {
-    previewJob.innerHTML = "Front-end developer";
-  }
-}
+// function valueInputJob() {
+//   return (infoPerson.job = job.value);
+// }
+// function resultJob(jobFilled) {
+//   if (job.value === "") {
+//     previewJob.innerHTML = "Front-end developer";
+//   }
+// }
 
 // FUNCION PARA RELLENAR PREVIEW -- JOB
 function handleUpdateJob() {
-  const jobFilled = job.value;
-  if (job.value === '') {
-    previewJob.innerHTML = 'Front-end developer';
-  } else {
-    previewJob.innerHTML = jobFilled;
-  }
+  // guardamos en el objeto principal
+  infoPerson.job = job.value;
+  previewJob.innerHTML = infoPerson.job === ''
+    ? 'Front-end developer'
+    : infoPerson.job;
 }
-function handleInputJob() {
-  const jobFilled = valueInputJob();
-  resultJob(jobFilled);
-}
-//LISTENERS -- copiado para poder usarlo
-fullName.addEventListener("keyup", handleInputFullName);
-job.addEventListener("keyup", handleInputJob);
+
+// function handleInputJob() {
+//   const jobFilled = valueInputJob();
+//   resultJob(jobFilled);
+// }
+
+// job.addEventListener("keyup", handleInputJob);
 
 // FUNCION PARA RELLENAR PREVIEW -- EMAIL
 function handleUpdateEmail() {
@@ -79,30 +80,13 @@ telephone.addEventListener('keyup', handleUpdateTelephone);
 linkedIn.addEventListener('keyup', handleUpdateLinkedIn);
 gitHub.addEventListener('keyup', handleUpdateGitHub);
 
-//añadir clase con colores
-previewFullName.classList.add('pallete1-color', 'pallete1-borderLeft');
-previewJob.classList.add('pallete1-borderLeft');
-previewIcon1.classList.add('pallete1-color', 'pallete1-border');
-previewIcon2.classList.add('pallete1-color', 'pallete1-border');
-previewIcon3.classList.add('pallete1-color', 'pallete1-border');
-previewIcon4.classList.add('pallete1-color', 'pallete1-border');
-
 //CAMBIAR LOS COLORES CON LAS PALETAS
-
 function changeColors(event){
-  if(event.target === palettes[0]){
-    previewCard.classList.add('palette1-js');
-    previewCard.classList.remove('palette2-js');
-    previewCard.classList.remove('palette3-js');
-  }else if(event.target === palettes[1]){
-    previewCard.classList.add('palette2-js');
-    previewCard.classList.remove('palette1-js');
-    previewCard.classList.remove('palette3-js');
-  }else if(event.target === palettes[2]){
-    previewCard.classList.add('palette3-js');
-    previewCard.classList.remove('palette1-js');
-    previewCard.classList.remove('palette2-js');
-  }
+  previewCard.classList.remove('palette1-js');
+  previewCard.classList.remove('palette2-js');
+  previewCard.classList.remove('palette3-js');
+  infoPerson.palette = Number(event.target.value);
+  previewCard.classList.add(`palette${infoPerson.palette}-js`);
 }
 for (const palette of palettes){
   palette.addEventListener('change', changeColors);

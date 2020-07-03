@@ -16,7 +16,6 @@ function resetForm() {
   gitHub.value = "";
   previewFullName.innerHTML = "Nombre Apellido";
   previewJob.innerHTML = "Front-End Developer";
-  //fileField.value = "";
 }
 
 function resetPreview() {
@@ -24,6 +23,16 @@ function resetPreview() {
   const jobFilled = job.value;
 }
 
-resetButton.addEventListener("click", resetForm);
-resetButton.addEventListener("click", resetPreview);
+function resetImgPreview(){
+  profileImage.style.backgroundImage = ``;
+  profilePreview.style.backgroundImage = ``;
+}
+
+function resetComplete(event){
+  resetForm();
+  resetPreview();
+  resetImgPreview();
+}
+
+resetButton.addEventListener("click", resetComplete);
 
