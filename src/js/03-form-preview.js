@@ -2,7 +2,7 @@
 
 //FUNCIONES PARA RELLENAR FULLNAME
 function valueInputName() {
-  return (infoPerson.name = fullName.value);
+  infoPerson.name = fullName.value;
 }
 function resultFullName(fullNameFilled) {
   if (fullName.value === '') {
@@ -50,25 +50,25 @@ function handleUpdateJob() {
 // FUNCION PARA RELLENAR PREVIEW -- EMAIL
 function handleUpdateEmail() {
   const emailFilled = email.value;
-  return (previewEmail.href = 'mailto:' + emailFilled);
+  previewEmail.href = 'mailto:' + emailFilled;
 }
 
 // FUNCION PARA RELLENAR PREVIEW -- TELEFONO
 function handleUpdateTelephone() {
   const telephoneFilled = telephone.value;
-  return (previewTelephone.href = 'tel:' + telephoneFilled);
+  previewTelephone.href = 'tel:' + telephoneFilled;
 }
 
 // FUNCION PARA RELLENAR PREVIEW -- LINKEDIN
 function handleUpdateLinkedIn() {
   const linkedInFilled = linkedIn.value;
-  return (previewLinkedIn.href = `https://www.linkedin.com/in/${linkedInFilled}`);
+  previewLinkedIn.href = `https://www.linkedin.com/in/${linkedInFilled}`;
 }
 
 // FUNCION PARA RELLENAR PREVIEW -- GITHUB
 function handleUpdateGitHub() {
   const gitHubFilled = gitHub.value;
-  return (previewGitHub.href = `https://github.com/${gitHubFilled}`);
+  previewGitHub.href = `https://github.com/${gitHubFilled}`;
 }
 
 // LISTENERS
