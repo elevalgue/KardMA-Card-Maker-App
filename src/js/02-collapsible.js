@@ -11,6 +11,7 @@ function hideFill() {
   divArrowFill.classList.toggle('closed');
 }
 formCloseFill.addEventListener('click', hideFill);
+
 //CERRAR SHARE SECTION
 function hideShare() {
   formOpenShare.classList.toggle('hidden');

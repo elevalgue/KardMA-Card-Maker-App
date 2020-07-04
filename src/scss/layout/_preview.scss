@@ -4,8 +4,6 @@
   height: 100%;
   padding: 38px 40px;
 
-  // @include pallete1;
-
   &__button {
     height: 30px;
     width: 75px;
@@ -24,6 +22,9 @@
     background-color: #bfcdd0;
     cursor: pointer;
     outline: none;
+    &:hover {
+      box-shadow: 0 4px 16px rgba(124, 163, 219, 0.5);
+    }
     .fa-trash-alt {
       margin-right: 5px;
     }
@@ -43,23 +44,26 @@
       padding: 21px 0 10px;
 
       &__title {
+        border-left: 5px solid $color-primary-medium;
         font-weight: $font-weight-bold;
         font-size: 18px;
-        // color: $color-primary-dark;
-        // border-left: 5px solid $color-primary-medium;
+        color: $color-primary-dark;
         padding-left: 15px;
       }
       &__subtitle {
+        border-left: 5px solid $color-primary-medium;
         font-weight: $font-weight-regular;
         font-size: 16px;
         color: $color-dark-medium;
-        // border-left: 5px solid $color-primary-medium;
         padding-left: 15px;
         padding-top: 4px;
       }
     }
     &__photo {
       height: 200px;
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-image: url(../images/default-image-flower-fill.svg);
     }
 
     &__icons {
@@ -68,7 +72,8 @@
       padding: 10px 0 12px 20px;
 
       &__item {
-        // border: 2px solid $color-primary-light;
+        border: 2px solid $color-primary-light;
+        color: $color-primary-dark;
         border-radius: 16px;
         height: 32px;
         width: 32px;
@@ -78,7 +83,6 @@
         flex-direction: row;
         justify-content: center;
         align-items: center;
-        // color: $color-primary-dark;
 
         &__tel {
           padding: 6px;
@@ -108,38 +112,44 @@
 
 // CLASSES TO CHANGE PALLETES
 
-.pallete1-color {
-  color: $color-primary-dark;
+.palette1-js{
+  .preview__main__name__title{
+    color: $color-primary-dark;
+    border-left: 5px solid $color-primary-medium;
+  }
+  .preview__main__name__subtitle{
+    border-left: 5px solid $color-primary-medium;
+  }
+  .preview__main__icons__item{
+    border: 2px solid $color-primary-light;
+    color: $color-primary-dark;
+  }
 }
 
-.pallete1-borderLeft {
-  border-left: 5px solid $color-primary-medium;
+.palette2-js{
+  .preview__main__name__title{
+    color: $color-red-dark;
+    border-left: 5px solid $color-red-normal;
+  }
+  .preview__main__name__subtitle{
+    border-left: 5px solid $color-red-normal;
+  }
+  .preview__main__icons__item{
+    border: 2px solid $color-red-light;
+    color: $color-red-dark;
+  }
 }
 
-.pallete1-border {
-  border: 2px solid $color-primary-light;
-}
-
-.pallete2-color {
-  color: #420101;
-}
-
-.pallete2-borderLeft {
-  border-left: 5px solid #bd1010;
-}
-
-.pallete2-border {
-  border: 2px solid #e95626;
-}
-
-.pallete3-color {
-  color: #3e5b65;
-}
-
-.pallete3-borderLeft {
-  border-left: 5px solid #eab052;
-}
-
-.pallete3-border {
-  border: 2px solid #a0c0cf;
+.palette3-js{
+  .preview__main__name__title{
+    color: $color-mix-dark;
+    border-left: 5px solid $color-mix-normal;
+  }
+  .preview__main__name__subtitle{
+    border-left: 5px solid $color-mix-normal;
+  }
+  .preview__main__icons__item{
+    border: 2px solid $color-mix-light;
+    color: $color-mix-dark;
+  }
 }

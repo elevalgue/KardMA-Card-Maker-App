@@ -18,9 +18,9 @@
           <fieldset class="article__custom__colors article__form__noborder">
             <div class="article__custom__cgreen">
               <input
-                class="color1-js"
+                class="palette-js"
                 type="radio"
-                value="colors-red"
+                value="1"
                 name="select-color"
                 checked
               />
@@ -30,9 +30,9 @@
             </div>
             <div class="article__custom__cred">
               <input
-                class="color2-js"
+                class="palette-js"
                 type="radio"
-                value="colors-green"
+                value="2"
                 name="select-color"
               />
               <div class="article__custom__cred4"></div>
@@ -41,9 +41,9 @@
             </div>
             <div class="article__custom__cmix">
               <input
-                class="color3-js"
+                class="palette-js"
                 type="radio"
-                value="colors-mix"
+                value="3"
                 name="select-color"
               />
               <div class="article__custom__cmix7"></div>
@@ -61,12 +61,12 @@
         <h2 class="article__fill__title">
           <i class="far fa-keyboard"></i> RELLENA
         </h2>
-        <div class="form__arrow--fill">
+        <div class="form__arrow--fill closed">
           <i class="fas fa-chevron-down arrow-js"></i>
         </div>
       </div>
       <!--Fill open-->
-      <div class="form__open__fill">
+      <div class="form__open__fill hidden">
         <fieldset class="article__fill__form article__form__noborder">
           <label for="fullName">Nombre completo</label>
           <input
@@ -86,14 +86,14 @@
           />
           <div class="article__fill__addimg">
             <h3 class="article__fill__titimg">Imagen de perfil</h3>
-            <div class="article__fill__minimg">
-              <input
-                class="article__fill__button addImage-js"
-                type="file"
-                value="Añadir imagen"
-              />
-              <button type="button" class="article__fill__addImg">Añadir Imagen</button>
-              <div class="article__fill__rectangle"></div>
+            <div class="action article__fill__minimg">
+              <input type="file" name="" id="img-selector" class="action__hiddenField js__profile-upload-btn article__fill__button "/>
+              <button class="action__upload-btn js__profile-trigger article__fill__addImg" type="button">
+                Añadir Imagen
+              </button>
+              <div class="profile__preview js__profile-preview article__fill__rectangle">
+                <div class="profile__image js__profile-image addImage-js"></div>
+              </div>
             </div>
           </div>
           <label for="email">Email</label>
@@ -140,12 +140,12 @@
         <h2 class="article__share__title">
           <i class="fas fa-share-alt"></i> COMPARTE
         </h2>
-        <div class="form__arrow--share">
+        <div class="form__arrow--share closed">
           <i class="fas fa-chevron-down arrow-js"></i>
         </div>
       </div>
       <!--Share open-->
-      <div class="form__open__share">
+      <div class="form__open__share hidden">
         <div class="article__share__container">
           <button class="article__share__button" disabled>
             <i class="far fa-address-card"></i>CREAR TARJETA
