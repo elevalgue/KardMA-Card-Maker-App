@@ -1,6 +1,8 @@
 .preview {
   height: 457px;
-  background-image: linear-gradient(to bottom, #bfcdd0, #dde9ed);
+  background-image: url(../images/logo-cards/logo-kardMA-hand.svg);
+  background-size: 29px;
+  background-color: $color-form-placeholder;
   height: 100%;
   padding: 38px 40px;
 
@@ -64,6 +66,7 @@
       background-size: contain;
       background-repeat: no-repeat;
       background-image: url(../images/default-image-flower-fill.svg);
+      background-position: center;
     }
 
     &__icons {
@@ -105,6 +108,7 @@
   .preview {
     grid-column: 2 / 3;
     grid-row: 1 / 1;
+    background-size: 47px;
     padding: 180px 45px 267px;
     border-radius: 6px;
   }
@@ -112,43 +116,43 @@
 
 // CLASSES TO CHANGE PALLETES
 
-.palette1-js{
-  .preview__main__name__title{
+.palette1-js {
+  .preview__main__name__title {
     color: $color-primary-dark;
     border-left: 5px solid $color-primary-medium;
   }
-  .preview__main__name__subtitle{
+  .preview__main__name__subtitle {
     border-left: 5px solid $color-primary-medium;
   }
-  .preview__main__icons__item{
+  .preview__main__icons__item {
     border: 2px solid $color-primary-light;
     color: $color-primary-dark;
   }
 }
 
-.palette2-js{
-  .preview__main__name__title{
+.palette2-js {
+  .preview__main__name__title {
     color: $color-red-dark;
     border-left: 5px solid $color-red-normal;
   }
-  .preview__main__name__subtitle{
+  .preview__main__name__subtitle {
     border-left: 5px solid $color-red-normal;
   }
-  .preview__main__icons__item{
+  .preview__main__icons__item {
     border: 2px solid $color-red-light;
     color: $color-red-dark;
   }
 }
 
-.palette3-js{
-  .preview__main__name__title{
+.palette3-js {
+  .preview__main__name__title {
     color: $color-mix-dark;
     border-left: 5px solid $color-mix-normal;
   }
-  .preview__main__name__subtitle{
+  .preview__main__name__subtitle {
     border-left: 5px solid $color-mix-normal;
   }
-  .preview__main__icons__item{
+  .preview__main__icons__item {
     border: 2px solid $color-mix-light;
     color: $color-mix-dark;
   }
