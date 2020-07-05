@@ -1,13 +1,11 @@
 .container {
   background-color: $color-medium-light;
   text-align: center;
-  padding: 95px 35px 30px 35px;
+  height: 92vh;
   display: flex;
   flex-direction: column;
   align-items: center;
-  @include tablet {
-    padding: 350px 175px 60px 175px;
-  }
+  justify-content: center;
 
   &__logoBox {
     padding-top: 96px;
@@ -75,10 +73,10 @@
       flex-direction: column;
       align-items: center;
       justify-content: center;
-      .fa-object-ungroup{
+      .fa-object-ungroup {
         font-size: 23px;
 
-        @include tablet{
+        @include tablet {
           font-size: 28px;
         }
       }
@@ -89,8 +87,8 @@
         font-weight: 400;
         text-transform: capitalize;
         padding: 2px 0 5px 0;
-        
-        @include tablet{
+
+        @include tablet {
           font-size: 16px;
         }
       }
@@ -100,10 +98,10 @@
       flex-direction: column;
       align-items: center;
       justify-content: center;
-      .fa-keyboard{
+      .fa-keyboard {
         font-size: 23px;
-        
-        @include tablet{
+
+        @include tablet {
           font-size: 28px;
         }
       }
@@ -114,8 +112,8 @@
         font-weight: 400;
         text-transform: capitalize;
         padding: 2px 0 5px 0;
-        
-        @include tablet{
+
+        @include tablet {
           font-size: 16px;
         }
       }
@@ -125,10 +123,10 @@
       flex-direction: column;
       align-items: center;
       justify-content: center;
-      .fa-share-alt{
+      .fa-share-alt {
         font-size: 23px;
-        
-        @include tablet{
+
+        @include tablet {
           font-size: 28px;
         }
       }
@@ -139,8 +137,8 @@
         font-weight: 400;
         text-transform: capitalize;
         padding: 2px 0 5px 0;
-        
-        @include tablet{
+
+        @include tablet {
           font-size: 16px;
         }
       }

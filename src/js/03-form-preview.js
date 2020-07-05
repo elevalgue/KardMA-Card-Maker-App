@@ -1,27 +1,35 @@
 'use strict';
 
 //FUNCIONES PARA RELLENAR FULLNAME
-function valueInputName() {
-  infoPerson.name = fullName.value;
-}
-function resultFullName(fullNameFilled) {
-  if (fullName.value === '') {
-    previewFullName.innerHTML = 'Nombre Apellido';
-  }
-}
-// FUNCION PARA RELLENAR PREVIEW -- NAME
+// function valueInputName() {
+//   infoPerson.name = fullName.value;
+// }
+// function resultFullName(fullNameFilled) {
+//   if (fullName.value === '') {
+//     previewFullName.innerHTML = 'Nombre Apellido';
+//   }
+// }
+// // FUNCION PARA RELLENAR PREVIEW -- NAME
+// function handleUpdateFullName() {
+//   const fullNameFilled = fullName.value;
+//   if (fullName.value === '') {
+//     previewFullName.innerHTML = 'Nombre Apellido';
+//   } else {
+//     previewFullName.innerHTML = fullNameFilled;
+//   }
+// }
+// function handleInputFullName() {
+//   const fullNameFilled = valueInputName();
+//   resultFullName(fullNameFilled);
+// }
+
+//Función nueva FullName:
 function handleUpdateFullName() {
-  const fullNameFilled = fullName.value;
-  if (fullName.value === '') {
-    previewFullName.innerHTML = 'Nombre Apellido';
-  } else {
-    previewFullName.innerHTML = fullNameFilled;
-  }
+  infoPerson.name = fullName.value;
+  previewFullName.innerHTML =
+    infoPerson.name === '' ? 'Nombre Apellido' : infoPerson.name;
 }
-function handleInputFullName() {
-  const fullNameFilled = valueInputName();
-  resultFullName(fullNameFilled);
-}
+
 //FUNCIONES PARA RELLENAR JOB
 // function valueInputJob() {
 //   return (infoPerson.job = job.value);

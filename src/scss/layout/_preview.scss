@@ -1,10 +1,15 @@
 .preview {
   height: 457px;
-  background-image: url(../images/logo-cards/logo-kardMA-hand.svg);
-  background-size: 29px;
-  background-color: $color-form-placeholder;
   height: 100%;
   padding: 38px 40px;
+  background-size: 54px;
+  background-color: $color-form-placeholder;
+  background-image: linear-gradient(
+      rgba(255, 255, 255, 0.5),
+      rgba(255, 255, 255, 0.5)
+    ),
+    url(../images/logo-cards/logo-kardMA-hand.svg);
+  background-repeat: repeat;
 
   &__button {
     height: 30px;
@@ -21,7 +26,8 @@
     border-radius: 15px;
     text-align: center;
     margin-bottom: 20px;
-    background-color: #bfcdd0;
+    background-color: $color-light;
+    box-shadow: 0 1px 10px 0 #000000;
     cursor: pointer;
     outline: none;
     &:hover {
@@ -108,7 +114,7 @@
   .preview {
     grid-column: 2 / 3;
     grid-row: 1 / 1;
-    background-size: 47px;
+    background-size: 54px;
     padding: 180px 45px 267px;
     border-radius: 6px;
   }
