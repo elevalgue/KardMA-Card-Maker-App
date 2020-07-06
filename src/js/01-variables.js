@@ -48,6 +48,7 @@ const previewCard = document.querySelector('.preview');
 const palettes = document.querySelectorAll('.palette-js');
 const miniImg = document.querySelector('.js__profile-image');
 const maxImg = document.querySelector('.js__profile-preview');
+const steps = document.querySelectorAll('.steps-js');
 
 //METE EL VALOR DE LOS INPUTS EN EL OBJETO
 function valueInput() {

@@ -1,4 +1,4 @@
-'use strict'
+'use strict';
 
 //FUNCIONES PARA RELLENAR FULLNAME
 function valueInputName() {

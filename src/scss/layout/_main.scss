@@ -73,6 +73,10 @@
       flex-direction: column;
       align-items: center;
       justify-content: center;
+      &:hover{
+        transform: scale(1.25);
+        cursor: pointer;
+      }
       .fa-object-ungroup {
         font-size: 23px;
 
@@ -98,6 +102,10 @@
       flex-direction: column;
       align-items: center;
       justify-content: center;
+      &:hover{
+        transform: scale(1.25);
+        cursor: pointer;
+      }
       .fa-keyboard {
         font-size: 23px;
 
@@ -123,6 +131,10 @@
       flex-direction: column;
       align-items: center;
       justify-content: center;
+      &:hover{
+        transform: scale(1.25);
+        cursor: pointer;
+      }
       .fa-share-alt {
         font-size: 23px;
 
