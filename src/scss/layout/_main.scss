@@ -75,7 +75,7 @@
       justify-content: center;
       &:hover{
         transform: scale(1.25);
-        cursor: pointer;
+        cursor: default;
       }
       .fa-object-ungroup {
         font-size: 23px;
@@ -104,7 +104,7 @@
       justify-content: center;
       &:hover{
         transform: scale(1.25);
-        cursor: pointer;
+        cursor: default;
       }
       .fa-keyboard {
         font-size: 23px;
@@ -133,7 +133,7 @@
       justify-content: center;
       &:hover{
         transform: scale(1.25);
-        cursor: pointer;
+        cursor: default;
       }
       .fa-share-alt {
         font-size: 23px;
