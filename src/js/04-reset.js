@@ -18,11 +18,6 @@ function resetForm() {
   previewJob.innerHTML = 'Front-End Developer';
 }
 
-// function resetPreview() {
-//   const fullNameFilled = fullName.value;
-//   const jobFilled = job.value;
-// }
-
 function resetImgPreview() {
   profileImage.style.backgroundImage = ``;
   profilePreview.style.backgroundImage = ``;
@@ -30,7 +25,6 @@ function resetImgPreview() {
 
 function resetComplete(event) {
   resetForm();
-  // resetPreview();
   resetImgPreview();
 }
 

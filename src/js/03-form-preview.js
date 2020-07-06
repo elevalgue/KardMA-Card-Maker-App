@@ -1,42 +1,10 @@
 'use strict';
 
-//FUNCIONES PARA RELLENAR FULLNAME
-// function valueInputName() {
-//   return (infoPerson.name = fullName.value);
-// }
-// function resultFullName(fullNameFilled) {
-//   if (fullName.value === "") {
-//     previewFullName.innerHTML = "Nombre Apellido";
-//   }
-// }
-// // FUNCION PARA RELLENAR PREVIEW -- NAME
-// function handleUpdateFullName() {
-//   const fullNameFilled = fullName.value;
-//   if (fullName.value === '') {
-//     previewFullName.innerHTML = 'Nombre Apellido';
-//   } else {
-//     previewFullName.innerHTML = fullNameFilled;
-//   }
-// }
-// function handleInputFullName() {
-//   const fullNameFilled = valueInputName();
-//   resultFullName(fullNameFilled);
-// }
-
 function handleUpdateFullName() {
   infoPerson.name = fullName.value;
   previewFullName.innerHTML =
     infoPerson.name === '' ? 'Nombre Apellido' : infoPerson.name;
 }
-//FUNCIONES PARA RELLENAR JOB
-// function valueInputJob() {
-//   return (infoPerson.job = job.value);
-// }
-// function resultJob(jobFilled) {
-//   if (job.value === "") {
-//     previewJob.innerHTML = "Front-end developer";
-//   }
-// }
 
 // FUNCION PARA RELLENAR PREVIEW -- JOB
 function handleUpdateJob() {
@@ -45,13 +13,6 @@ function handleUpdateJob() {
   previewJob.innerHTML =
     infoPerson.job === '' ? 'Front-end developer' : infoPerson.job;
 }
-
-// function handleInputJob() {
-//   const jobFilled = valueInputJob();
-//   resultJob(jobFilled);
-// }
-
-// job.addEventListener("keyup", handleInputJob);
 
 // FUNCION PARA RELLENAR PREVIEW -- EMAIL
 function handleUpdateEmail() {
