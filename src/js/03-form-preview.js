@@ -1,35 +1,27 @@
-'use strict';
+'use strict'
 
 //FUNCIONES PARA RELLENAR FULLNAME
-// function valueInputName() {
-//   infoPerson.name = fullName.value;
-// }
-// function resultFullName(fullNameFilled) {
-//   if (fullName.value === '') {
-//     previewFullName.innerHTML = 'Nombre Apellido';
-//   }
-// }
-// // FUNCION PARA RELLENAR PREVIEW -- NAME
-// function handleUpdateFullName() {
-//   const fullNameFilled = fullName.value;
-//   if (fullName.value === '') {
-//     previewFullName.innerHTML = 'Nombre Apellido';
-//   } else {
-//     previewFullName.innerHTML = fullNameFilled;
-//   }
-// }
-// function handleInputFullName() {
-//   const fullNameFilled = valueInputName();
-//   resultFullName(fullNameFilled);
-// }
-
-//Función nueva FullName:
-function handleUpdateFullName() {
-  infoPerson.name = fullName.value;
-  previewFullName.innerHTML =
-    infoPerson.name === '' ? 'Nombre Apellido' : infoPerson.name;
+function valueInputName() {
+  return (infoPerson.name = fullName.value);
 }
-
+function resultFullName(fullNameFilled) {
+  if (fullName.value === "") {
+    previewFullName.innerHTML = "Nombre Apellido";
+  }
+}
+// FUNCION PARA RELLENAR PREVIEW -- NAME
+function handleUpdateFullName() {
+  const fullNameFilled = fullName.value;
+  if (fullName.value === '') {
+    previewFullName.innerHTML = 'Nombre Apellido';
+  } else {
+    previewFullName.innerHTML = fullNameFilled;
+  }
+}
+function handleInputFullName() {
+  const fullNameFilled = valueInputName();
+  resultFullName(fullNameFilled);
+}
 //FUNCIONES PARA RELLENAR JOB
 // function valueInputJob() {
 //   return (infoPerson.job = job.value);
@@ -44,8 +36,9 @@ function handleUpdateFullName() {
 function handleUpdateJob() {
   // guardamos en el objeto principal
   infoPerson.job = job.value;
-  previewJob.innerHTML =
-    infoPerson.job === '' ? 'Front-end developer' : infoPerson.job;
+  previewJob.innerHTML = infoPerson.job === ''
+    ? 'Front-end developer'
+    : infoPerson.job;
 }
 
 // function handleInputJob() {
@@ -58,25 +51,25 @@ function handleUpdateJob() {
 // FUNCION PARA RELLENAR PREVIEW -- EMAIL
 function handleUpdateEmail() {
   const emailFilled = email.value;
-  previewEmail.href = 'mailto:' + emailFilled;
+  return (previewEmail.href = 'mailto:' + emailFilled);
 }
 
 // FUNCION PARA RELLENAR PREVIEW -- TELEFONO
 function handleUpdateTelephone() {
   const telephoneFilled = telephone.value;
-  previewTelephone.href = 'tel:' + telephoneFilled;
+  return (previewTelephone.href = 'tel:' + telephoneFilled);
 }
 
 // FUNCION PARA RELLENAR PREVIEW -- LINKEDIN
 function handleUpdateLinkedIn() {
   const linkedInFilled = linkedIn.value;
-  previewLinkedIn.href = `https://www.linkedin.com/in/${linkedInFilled}`;
+  return (previewLinkedIn.href = `https://www.linkedin.com/in/${linkedInFilled}`);
 }
 
 // FUNCION PARA RELLENAR PREVIEW -- GITHUB
 function handleUpdateGitHub() {
   const gitHubFilled = gitHub.value;
-  previewGitHub.href = `https://github.com/${gitHubFilled}`;
+  return (previewGitHub.href = `https://github.com/${gitHubFilled}`);
 }
 
 // LISTENERS
@@ -88,13 +81,13 @@ linkedIn.addEventListener('keyup', handleUpdateLinkedIn);
 gitHub.addEventListener('keyup', handleUpdateGitHub);
 
 //CAMBIAR LOS COLORES CON LAS PALETAS
-function changeColors(event) {
+function changeColors(event){
   previewCard.classList.remove('palette1-js');
   previewCard.classList.remove('palette2-js');
   previewCard.classList.remove('palette3-js');
   infoPerson.palette = Number(event.target.value);
   previewCard.classList.add(`palette${infoPerson.palette}-js`);
 }
-for (const palette of palettes) {
+for (const palette of palettes){
   palette.addEventListener('change', changeColors);
 }
