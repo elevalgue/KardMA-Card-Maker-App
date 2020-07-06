@@ -1,26 +1,32 @@
 'use strict';
 
 //FUNCIONES PARA RELLENAR FULLNAME
-function valueInputName() {
-  return (infoPerson.name = fullName.value);
-}
-function resultFullName(fullNameFilled) {
-  if (fullName.value === "") {
-    previewFullName.innerHTML = "Nombre Apellido";
-  }
-}
-// FUNCION PARA RELLENAR PREVIEW -- NAME
+// function valueInputName() {
+//   return (infoPerson.name = fullName.value);
+// }
+// function resultFullName(fullNameFilled) {
+//   if (fullName.value === "") {
+//     previewFullName.innerHTML = "Nombre Apellido";
+//   }
+// }
+// // FUNCION PARA RELLENAR PREVIEW -- NAME
+// function handleUpdateFullName() {
+//   const fullNameFilled = fullName.value;
+//   if (fullName.value === '') {
+//     previewFullName.innerHTML = 'Nombre Apellido';
+//   } else {
+//     previewFullName.innerHTML = fullNameFilled;
+//   }
+// }
+// function handleInputFullName() {
+//   const fullNameFilled = valueInputName();
+//   resultFullName(fullNameFilled);
+// }
+
 function handleUpdateFullName() {
-  const fullNameFilled = fullName.value;
-  if (fullName.value === '') {
-    previewFullName.innerHTML = 'Nombre Apellido';
-  } else {
-    previewFullName.innerHTML = fullNameFilled;
-  }
-}
-function handleInputFullName() {
-  const fullNameFilled = valueInputName();
-  resultFullName(fullNameFilled);
+  infoPerson.name = fullName.value;
+  previewFullName.innerHTML =
+    infoPerson.name === '' ? 'Nombre Apellido' : infoPerson.name;
 }
 //FUNCIONES PARA RELLENAR JOB
 // function valueInputJob() {
@@ -36,9 +42,8 @@ function handleInputFullName() {
 function handleUpdateJob() {
   // guardamos en el objeto principal
   infoPerson.job = job.value;
-  previewJob.innerHTML = infoPerson.job === ''
-    ? 'Front-end developer'
-    : infoPerson.job;
+  previewJob.innerHTML =
+    infoPerson.job === '' ? 'Front-end developer' : infoPerson.job;
 }
 
 // function handleInputJob() {
@@ -81,13 +86,13 @@ linkedIn.addEventListener('keyup', handleUpdateLinkedIn);
 gitHub.addEventListener('keyup', handleUpdateGitHub);
 
 //CAMBIAR LOS COLORES CON LAS PALETAS
-function changeColors(event){
+function changeColors(event) {
   previewCard.classList.remove('palette1-js');
   previewCard.classList.remove('palette2-js');
   previewCard.classList.remove('palette3-js');
   infoPerson.palette = Number(event.target.value);
   previewCard.classList.add(`palette${infoPerson.palette}-js`);
 }
-for (const palette of palettes){
+for (const palette of palettes) {
   palette.addEventListener('change', changeColors);
 }
