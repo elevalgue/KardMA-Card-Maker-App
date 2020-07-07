@@ -72,6 +72,7 @@ function sendRequest(json) {
     })
     .then(function (result) {
       showURL(result);
+      twitterContainer.classList.remove('hidden');
     })
     .catch(function (error) {
       console.log(error);
@@ -80,9 +81,30 @@ function sendRequest(json) {
 
 function showURL(result) {
   if (result.success) {
-    responseURL.innerHTML =
-      "<a href=" + result.cardURL + ">" + result.cardURL + "</a>";
+    responseURL.innerHTML = "<a href="+ result.cardURL  + ">" + result.cardURL + "</a>";
+    twitterButton.innerHTML += "<a href="+ "https://twitter.com/intent/tweet?url=" + result.cardURL + "></a>";
   } else {
     responseURL.innerHTML = "ERROR:" + result.error;
   }
+
 }
+
+//OCULTAR BOTON DE TWITTER Y ENLACE
+
+
+
+//LOCAL STORAGE
+const recoverInfo = () => {
+  const local = localStorage.getItem('infoPerson');
+  const dataLocal = JSON.parse(local);
+  if (dataLocal !== null){
+    fullName.value = dataLocal.name;
+    job.value = dataLocal.job;
+    email.value = dataLocal.email;
+    phone.value = dataLocal.phone;
+    infoPerson.photo = dataLocal.photo; /*ESTO ES LO QUE DA ERROR*/
+    linkedIn.value = dataLocal.linkedin;
+    gitHub.value = dataLocal.github;
+  }
+};
+recoverInfo();

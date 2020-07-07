@@ -49,6 +49,9 @@ const palettes = document.querySelectorAll(".palette-js");
 const miniImg = document.querySelector(".js__profile-image");
 const maxImg = document.querySelector(".js__profile-preview");
 const steps = document.querySelectorAll(".steps-js");
+const twitterContainer = document.querySelector('.article__share__create');
+const twitterButton = document.querySelector('.article__twitter__button');
+
 
 //METE EL VALOR DE LOS INPUTS EN EL OBJETO
 function valueInput() {
@@ -58,6 +61,7 @@ function valueInput() {
   infoPerson.phone = Number(phone.value);
   infoPerson.linkedin = linkedIn.value;
   infoPerson.github = gitHub.value;
+  localStorage.setItem('infoPerson', JSON.stringify(infoPerson));
 }
 
 //LISTENERS
