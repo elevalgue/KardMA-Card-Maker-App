@@ -82,16 +82,11 @@ function sendRequest(json) {
 function showURL(result) {
   if (result.success) {
     responseURL.innerHTML = "<a href="+ result.cardURL  + ">" + result.cardURL + "</a>";
-    twitterButton.innerHTML += "<a href="+ "https://twitter.com/intent/tweet?url=" + result.cardURL + "></a>";
+    twitterButton.innerHTML += '<a href='+'"https://twitter.com/intent/tweet?url='+ result.cardURL + '" target="_blank"></a>';
   } else {
     responseURL.innerHTML = "ERROR:" + result.error;
   }
-
 }
-
-//OCULTAR BOTON DE TWITTER Y ENLACE
-
-
 
 //LOCAL STORAGE
 const recoverInfo = () => {
