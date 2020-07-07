@@ -1,5 +1,4 @@
-'use strict';
-
+// FUNCION PARA RELLENAR PREVIEW -- NAME
 function handleUpdateFullName() {
   infoPerson.name = fullName.value;
   previewFullName.innerHTML =
@@ -8,7 +7,6 @@ function handleUpdateFullName() {
 
 // FUNCION PARA RELLENAR PREVIEW -- JOB
 function handleUpdateJob() {
-  // guardamos en el objeto principal
   infoPerson.job = job.value;
   previewJob.innerHTML =
     infoPerson.job === '' ? 'Front-end developer' : infoPerson.job;
@@ -45,6 +43,7 @@ email.addEventListener('keyup', handleUpdateEmail);
 telephone.addEventListener('keyup', handleUpdateTelephone);
 linkedIn.addEventListener('keyup', handleUpdateLinkedIn);
 gitHub.addEventListener('keyup', handleUpdateGitHub);
+
 
 //CAMBIAR LOS COLORES CON LAS PALETAS
 function changeColors(event) {

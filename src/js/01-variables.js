@@ -58,7 +58,7 @@ function valueInput() {
   infoPerson.name = fullName.value;
   infoPerson.job = job.value;
   infoPerson.email = email.value;
-  infoPerson.phone = Number(phone.value);
+  infoPerson.phone = Number(telephone.value);
   infoPerson.linkedin = linkedIn.value;
   infoPerson.github = gitHub.value;
   localStorage.setItem('infoPerson', JSON.stringify(infoPerson));

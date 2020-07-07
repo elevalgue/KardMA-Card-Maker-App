@@ -16,6 +16,7 @@ function resetForm() {
   gitHub.value = '';
   previewFullName.innerHTML = 'Nombre Apellido';
   previewJob.innerHTML = 'Front-End Developer';
+  localStorage.removeItem('infoPerson');
 }
 
 function resetImgPreview() {
