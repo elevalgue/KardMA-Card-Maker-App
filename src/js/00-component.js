@@ -3,8 +3,8 @@
 const fr = new FileReader();
 const uploadBtn = document.querySelector(".js__profile-trigger");
 const fileField = document.querySelector(".js__profile-upload-btn");
-const profileImage = document.querySelector(".js__profile-image");
-const profilePreview = document.querySelector(".js__profile-preview");
+const miniImg = document.querySelector(".js__profile-image");
+const maxImg = document.querySelector(".js__profile-preview");
 
 /**
  * Recoge el archivo añadido al campo de tipo "file"
@@ -30,8 +30,8 @@ function writeImage() {
    * podemos pasarlo como background a la imagen de perfil y a la vista previa
    * de nuestro componente.
    */
-  profileImage.style.backgroundImage = `url(${fr.result})`;
-  profilePreview.style.backgroundImage = `url(${fr.result})`;
+  miniImg.style.backgroundImage = `url(${fr.result})`;
+  maxImg.style.backgroundImage = `url(${fr.result})`;
   infoPerson.photo = fr.result;
 }
 

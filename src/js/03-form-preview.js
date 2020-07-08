@@ -14,24 +14,28 @@ function handleUpdateJob() {
 
 // FUNCION PARA RELLENAR PREVIEW -- EMAIL
 function handleUpdateEmail() {
+  infoPerson.email = email.value;
   const emailFilled = email.value;
   return (previewEmail.href = 'mailto:' + emailFilled);
 }
 
 // FUNCION PARA RELLENAR PREVIEW -- TELEFONO
 function handleUpdateTelephone() {
+  infoPerson.phone = telephone.value;
   const telephoneFilled = telephone.value;
   return (previewTelephone.href = 'tel:' + telephoneFilled);
 }
 
 // FUNCION PARA RELLENAR PREVIEW -- LINKEDIN
 function handleUpdateLinkedIn() {
+  infoPerson.linkedin = linkedIn.value;
   const linkedInFilled = linkedIn.value;
   return (previewLinkedIn.href = `https://www.linkedin.com/in/${linkedInFilled}`);
 }
 
 // FUNCION PARA RELLENAR PREVIEW -- GITHUB
 function handleUpdateGitHub() {
+  infoPerson.github = gitHub.value;
   const gitHubFilled = gitHub.value;
   return (previewGitHub.href = `https://github.com/${gitHubFilled}`);
 }

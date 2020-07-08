@@ -34,7 +34,7 @@ function showURL(result) {
     responseURL.innerHTML =
       "<a href=" + result.cardURL + ">" + result.cardURL + "</a>";
 
-    const tweet = 'Hola Adalaber, aquí tienes tu tarjeta de presentación!';
+    const tweet = 'Hola Adalaber, aquí tienes tu tarjeta de presentación! 🌸';
     twitterButton.setAttribute(
       "href",
       `https://twitter.com/intent/tweet?url=${tweet} ${result.cardURL}`
@@ -55,14 +55,29 @@ const recoverInfo = () => {
     fullName.value = dataLocal.name;
     handleUpdateFullName();
 
-    //repetir esta estructura de código con el resto
-
+    infoPerson.job = dataLocal.job;
     job.value = dataLocal.job;
+    handleUpdateJob();
+
+    infoPerson.email = dataLocal.email;
     email.value = dataLocal.email;
+    handleUpdateEmail();
+
     phone.value = dataLocal.phone;
-    infoPerson.photo = dataLocal.photo; /*ESTO ES LO QUE DA ERROR*/
+    infoPerson.phone = dataLocal.phone;
+    handleUpdateTelephone();
+
+    infoPerson.photo = dataLocal.photo;
+    maxImg.style.backgroundImage = `url(${dataLocal.photo})`;
+    miniImg.style.backgroundImage = `url(${dataLocal.photo})`;
+
+    infoPerson.linkedin = dataLocal.linkedin;
     linkedIn.value = dataLocal.linkedin;
+    handleUpdateLinkedIn();
+
     gitHub.value = dataLocal.github;
+    infoPerson.github = dataLocal.github;
+    handleUpdateGitHub();
   }
 };
 recoverInfo();
