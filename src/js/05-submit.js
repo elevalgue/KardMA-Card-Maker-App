@@ -1,34 +1,34 @@
-"use strict";
+'use strict';
 //LISTENERS
-fullName.addEventListener("keyup", () => {
+fullName.addEventListener('keyup', () => {
   valueInput();
   validateForm();
 });
-job.addEventListener("keyup", () => {
+job.addEventListener('keyup', () => {
   valueInput();
   validateForm();
 });
-selectImagen.addEventListener("change", () => {
+selectImagen.addEventListener('change', () => {
   valueInput();
   validateForm();
 });
-email.addEventListener("keyup", () => {
+email.addEventListener('keyup', () => {
   valueInput();
   validateForm();
 });
-telephone.addEventListener("keyup", () => {
+telephone.addEventListener('keyup', () => {
   valueInput();
   validateForm();
 });
-linkedIn.addEventListener("keyup", () => {
+linkedIn.addEventListener('keyup', () => {
   valueInput();
   validateForm();
 });
-gitHub.addEventListener("keyup", () => {
+gitHub.addEventListener('keyup', () => {
   valueInput();
   validateForm();
 });
-resetButton.addEventListener("click", resetForm);
+resetButton.addEventListener('click', resetForm);
 
 // FUNCIÓN PARA VALIDAR EL FORMULARIO:
 
@@ -36,17 +36,18 @@ function validateForm() {
   if (
     infoPerson.name.length < 1 ||
     infoPerson.job.length < 1 ||
+    infoPerson.photo.length < 1 ||
     infoPerson.email.length < 1 ||
     infoPerson.phone.length < 1 ||
     infoPerson.linkedin.length < 1 ||
     infoPerson.github.length < 1
   ) {
-    submitButton.setAttribute("disabled", "disabled");
+    submitButton.setAttribute('disabled', 'disabled');
   } else {
-    submitButton.removeAttribute("disabled");
-    submitButton.classList.remove("cursor__btn__submit");
+    submitButton.removeAttribute('disabled');
+    submitButton.classList.remove('cursor__btn__submit');
   }
 }
 
-submitButton.addEventListener("click", sendData);
-
+submitButton.addEventListener('click', sendData);
+window.addEventListener('load', validateForm);

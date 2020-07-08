@@ -1,7 +1,7 @@
-"use strict";
+'use strict';
 
 // GENERAR URL DE LA TARJETA
-const responseURL = document.querySelector(".response");
+const responseURL = document.querySelector('.response');
 
 function sendData(ev) {
   ev.preventDefault();
@@ -9,11 +9,11 @@ function sendData(ev) {
 }
 
 function sendRequest(json) {
-  fetch("https://us-central1-awesome-cards-cf6f0.cloudfunctions.net/card/", {
-    method: "POST",
+  fetch('https://us-central1-awesome-cards-cf6f0.cloudfunctions.net/card/', {
+    method: 'POST',
     body: JSON.stringify(json),
     headers: {
-      "content-type": "application/json",
+      'content-type': 'application/json',
     },
   })
     .then(function (resp) {
@@ -21,7 +21,7 @@ function sendRequest(json) {
     })
     .then(function (result) {
       showURL(result);
-      twitterContainer.classList.remove("hidden");
+      twitterContainer.classList.remove('hidden');
     })
     .catch(function (error) {
       console.log(error);
@@ -32,23 +32,27 @@ function showURL(result) {
   const child = document.querySelector('.child');
   if (result.success) {
     responseURL.innerHTML =
-      "<a href=" + result.cardURL + ">" + result.cardURL + "</a>";
+      '<a href=' +
+      result.cardURL +
+      " target='_blank' rel='noopener noreferrer'>" +
+      result.cardURL +
+      '</a>';
 
     const tweet = 'Hola Adalaber, aquí tienes tu tarjeta de presentación! 🌸';
     twitterButton.setAttribute(
-      "href",
+      'href',
       `https://twitter.com/intent/tweet?url=${tweet} ${result.cardURL}`
     );
-    twitterButton.setAttribute("target", "_blank");
+    twitterButton.setAttribute('target', '_blank');
     twitterButton.appendChild(child);
   } else {
-    responseURL.innerHTML = "ERROR:" + result.error;
+    responseURL.innerHTML = 'ERROR:' + result.error;
   }
 }
 
 //LOCAL STORAGE
 const recoverInfo = () => {
-  const local = localStorage.getItem("infoPerson");
+  const local = localStorage.getItem('infoPerson');
   const dataLocal = JSON.parse(local);
   if (dataLocal !== null) {
     infoPerson.fullName = dataLocal.name;
@@ -70,6 +74,7 @@ const recoverInfo = () => {
     infoPerson.photo = dataLocal.photo;
     maxImg.style.backgroundImage = `url(${dataLocal.photo})`;
     miniImg.style.backgroundImage = `url(${dataLocal.photo})`;
+
     // localStoragePhoto();
 
     infoPerson.linkedin = dataLocal.linkedin;
