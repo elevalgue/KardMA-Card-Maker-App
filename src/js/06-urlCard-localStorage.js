@@ -1,3 +1,5 @@
+"use strict";
+
 // GENERAR URL DE LA TARJETA
 const responseURL = document.querySelector(".response");
 
@@ -19,7 +21,7 @@ function sendRequest(json) {
     })
     .then(function (result) {
       showURL(result);
-      twitterContainer.classList.remove('hidden');
+      twitterContainer.classList.remove("hidden");
     })
     .catch(function (error) {
       console.log(error);
@@ -28,8 +30,13 @@ function sendRequest(json) {
 
 function showURL(result) {
   if (result.success) {
-    responseURL.innerHTML = "<a href="+ result.cardURL  + ">" + result.cardURL + "</a>";
-    twitterButton.innerHTML += '<a href='+'"https://twitter.com/intent/tweet?url='+ result.cardURL + '" target="_blank"></a>';
+    responseURL.innerHTML =
+      "<a href=" + result.cardURL + ">" + result.cardURL + "</a>";
+    twitterButton.setAttribute(
+      "href",
+      `https://twitter.com/intent/tweet?url=${result.cardURL}`
+    );
+    twitterButton.setAttribute("target", "_blank");
   } else {
     responseURL.innerHTML = "ERROR:" + result.error;
   }
@@ -37,10 +44,15 @@ function showURL(result) {
 
 //LOCAL STORAGE
 const recoverInfo = () => {
-  const local = localStorage.getItem('infoPerson');
+  const local = localStorage.getItem("infoPerson");
   const dataLocal = JSON.parse(local);
-  if (dataLocal !== null){
+  if (dataLocal !== null) {
+    infoPerson.fullName = dataLocal.name;
     fullName.value = dataLocal.name;
+    handleUpdateFullName();
+
+    //repetir esta estructura de código con el resto
+
     job.value = dataLocal.job;
     email.value = dataLocal.email;
     phone.value = dataLocal.phone;
