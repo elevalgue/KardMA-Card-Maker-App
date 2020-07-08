@@ -32,10 +32,9 @@ function writeImage() {
    * de nuestro componente.
    */
   infoPerson.photo = fr.result;
+  localStorage.setItem('infoPerson', JSON.stringify(infoPerson));
   miniImg.style.backgroundImage = `url(${fr.result})`;
   maxImg.style.backgroundImage = `url(${fr.result})`;
-  validateForm();
-  valueInput();
 }
 
 /**
