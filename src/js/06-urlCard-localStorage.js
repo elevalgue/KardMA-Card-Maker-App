@@ -70,6 +70,7 @@ const recoverInfo = () => {
     infoPerson.photo = dataLocal.photo;
     maxImg.style.backgroundImage = `url(${dataLocal.photo})`;
     miniImg.style.backgroundImage = `url(${dataLocal.photo})`;
+    // localStoragePhoto();
 
     infoPerson.linkedin = dataLocal.linkedin;
     linkedIn.value = dataLocal.linkedin;
@@ -81,3 +82,12 @@ const recoverInfo = () => {
   }
 };
 recoverInfo();
+
+//FUNCION PARA GUARDAR EN EL LOCAL STORAGE LA IMAGEN INDIVIDUALMENTE
+// function localStoragePhoto (event) {
+//   infoPerson.photo = dataLocal.photo;
+//   maxImg.style.backgroundImage = `url(${dataLocal.photo})`;
+//   miniImg.style.backgroundImage = `url(${dataLocal.photo})`;
+// }
+
+// uploadBtn.addEventListener("click", localStoragePhoto);

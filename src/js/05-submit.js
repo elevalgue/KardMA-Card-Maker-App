@@ -9,8 +9,8 @@ job.addEventListener("keyup", () => {
   validateForm();
 });
 selectImagen.addEventListener("change", () => {
-  valueInput;
-  validateForm;
+  valueInput();
+  validateForm();
 });
 email.addEventListener("keyup", () => {
   valueInput();
