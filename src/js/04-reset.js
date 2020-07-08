@@ -22,8 +22,8 @@ function resetForm() {
 }
 
 function resetImgPreview() {
-  profileImage.style.backgroundImage = ``;
-  profilePreview.style.backgroundImage = ``;
+  maxImg.style.backgroundImage = ``;
+  miniImg.style.backgroundImage = ``;
 }
 
 function resetComplete(event) {
