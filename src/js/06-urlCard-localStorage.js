@@ -29,14 +29,18 @@ function sendRequest(json) {
 }
 
 function showURL(result) {
+  const child = document.querySelector('.child');
   if (result.success) {
     responseURL.innerHTML =
       "<a href=" + result.cardURL + ">" + result.cardURL + "</a>";
+
+    const tweet = 'Hola Adalaber, aquí tienes tu tarjeta de presentación!';
     twitterButton.setAttribute(
       "href",
-      `https://twitter.com/intent/tweet?url=${result.cardURL}`
+      `https://twitter.com/intent/tweet?url=${tweet} ${result.cardURL}`
     );
     twitterButton.setAttribute("target", "_blank");
+    twitterButton.appendChild(child);
   } else {
     responseURL.innerHTML = "ERROR:" + result.error;
   }
