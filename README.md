@@ -1,4 +1,5 @@
-🧘‍♀️ **KardMA (Card Maker App)
+ 
+**KardMA (Card Maker App) 
 
 Aplicación web para crear tarjetas de presentación de forma interactiva.
 
