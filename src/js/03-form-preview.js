@@ -1,3 +1,4 @@
+'use strict';
 // FUNCION PARA RELLENAR PREVIEW -- NAME
 function handleUpdateFullName() {
   infoPerson.name = fullName.value;
